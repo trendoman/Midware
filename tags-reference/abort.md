@@ -1,6 +1,6 @@
 # abort
 
-Tag **abort** tag is somewhat akin to PHP *die();*. It breaks the code execution and any code after the tag will not run.
+Tag **abort** is somewhat akin to PHP *die();*. It breaks the code execution and any code after the tag will not run.
 
 ```html
 <cms:abort />
