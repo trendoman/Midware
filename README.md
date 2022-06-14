@@ -16,7 +16,7 @@ Become the pro and rise above the competition with —
 * Everything you'll find here is **official, straight from CouchCMS** source code.
 
 > ▲ tags<br>
-> ► concepts<br>
+> ○ concepts<br>
 > ▼ tutorials<br>
 
 
