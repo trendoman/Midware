@@ -1,9 +1,3 @@
----
-title: capture
-parent: Tags Reference
-layout: default
----
-
 # capture
 
 The **capture** tag can be used to store the output of its enclosed contents within any variable.<br/>
@@ -30,6 +24,9 @@ Another important function this tag performs is setting arrays from JSON-formatt
 </cms:capture>
 
 <cms:show identity.name />
+=> John
+<cms:show identity.cars.1 />
+=> BMW
 ```
 Usual tag 'cms:set' does the same job, but **capture** is easier with larger JSONs or when there are tags or code within the block.
 
