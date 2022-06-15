@@ -1,8 +1,8 @@
 # activation_link
 
-Tag **cms:activation_link** helps get the registration activation link and belongs to [Extended Users Addon](https://www.couchcms.com/docs/extended-entities/post.htm).
+Tag **cms:activation_link** helps get the registration activation link and belongs to [Extended Users](https://www.couchcms.com/docs/extended-entities/post.htm) addon.
 
-```html
+```xml
 <cms:activation_link user='example@example.me' />
 ```
 
@@ -19,7 +19,7 @@ Parameter **user** is mandatory and takes either email or username. Usually the 
 
 Parameter **processor** takes template name, which the user will be visiting upon clicking the link from email.
 
-```html
+```xml
 <cms:activation_link user='example@example.cc' processor='register.php' />
 ```
 
@@ -29,7 +29,7 @@ Processor template is often explicitly stated in Addon's configuration file and 
 
 Tag is expected to be used in email sent to user e.g.
 
-```html
+```xml
 <cms:send_mail from=k_email_from to=frm_extended_user_email subject='New Account Confirmation'>
    Please click the following link to activate your account:
    <cms:activation_link frm_extended_user_email />
@@ -38,10 +38,11 @@ Tag is expected to be used in email sent to user e.g.
 </cms:send_mail>
 ```
 
-## Related tags
-
-* **process_activation**
-
 ## Variables
 
 This tag does not set any variables of its own.
+
+## Related tags
+
+* [**process_activation**](./process_activation.md)
+
