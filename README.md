@@ -1,5 +1,6 @@
 # Missed in Development - ware
-Over 100 Tags and many Concepts are missing from official [Documentation](https://docs.couchcms.com/index.html).
+
+Over 100 Tags and many Concepts are missing from official [**CouchCMS Documentation**](https://docs.couchcms.com/index.html).
 
 ---
 

@@ -8,8 +8,8 @@ However, the one missing feature that had always prevented this from happening w
 
 The beauty of present implementation is that it uses a regular Couch template for creating user-accounts but, importantly, the cloned pages do not try to 'simulate' the existing Users. Instead, they 'extend' them. To do so, we simply use a normal clonable template and associate it with system Users section. As each user-account is basically only a regular cloned-page, this approach places the full gamut of Couch's existing features at its disposal.
 
-For example —<br>
-a. We can define any number/type of editable regions (i.e. custom fields) to hold user-data. So if your site decides to follow Facebook in allowing users to idenfify themselves using 51 gender types - no sweat :)<br>
+For example, —<br>
+a. We can define any number/type of editable regions (i.e. custom fields) to hold user-data. So if your site decides to follow Facebook in allowing users to identify themselves using 51 gender types - no sweat :)<br>
 b. We can use the 'relationship' feature to relate 'users' with other cloned pages e.g. posts, likes, videos, etc.<br>
 c. We can use the full power of cms:pages tag to list users slicing and dicing through the custom fields.
 
@@ -68,7 +68,7 @@ b. Each cloned page created from this template will automatically create and get
 
 If your site does not require any of the two above-mentioned features, you can skip implementing this template.
 
-> NOTE: The access level of all accounts created from the front-end will always be 'Authenticated User' (i.e. having 'k_user_access_level' of *2*). Which means that these accounts will not have the privelege to access the admin-panel. This restriction is by design.
+> NOTE: The access level of all accounts created from the front-end will always be 'Authenticated User' (i.e. having 'k_user_access_level' of *2*). Which means that these accounts will not have the privilege to access the admin-panel. This restriction is by design.
 
 
 ### 2. users/register.php
@@ -319,7 +319,7 @@ We handle this activation part as follows using the cms:process_activation tag -
     ..
     ..
 ```
-The setting of success message and subsequent redirection that folows should be familiar to you now.
+The setting of success message and subsequent redirection that follows should be familiar to you now.
 
 That completes our tour through the code in 'users/register.php' template.
 Next we implement the 'Login/Logout' functionality through 'users/login.php;
@@ -393,7 +393,7 @@ $t['lost_password_tpl'] = 'users/lost-password.php';
 $t['registration_tpl'] = 'users/register.php';
 ```
 
-Take a look at the code in this template and you'll find that is is quite similar to the 'users/login.php' template we implemented above - e.g.
+Take a look at the code in this template and you'll find that it is quite similar to the 'users/login.php' template we implemented above - e.g.
 1. implements two related functions - forgot-password and reset-password.
 2. one of the two functions (namely forgot-password) uses form while the other (reset-password) relies on URL.
 3. the form used expects cms:input with a specific name.
@@ -432,7 +432,7 @@ $t['reset_req_email_subject'] = 'Password reset requested';
 $t['reset_req_email_msg_0'] = 'A request was received to reset your password for the following site and username';
 $t['reset_req_email_msg_1'] = 'To confirm that the request was made by you please visit the following address, otherwise just ignore this email.';
 ```
-This is to maintain backward compatibilty with the existing native Forgot/Reset password functions in Couch (i.e. those that you reach via 'Forgot Password?' link below the native login box).
+This is to maintain backward compatibility with the existing native Forgot/Reset password functions in Couch (i.e. those that you reach via 'Forgot Password?' link below the native login box).
 
 If, however, you'd prefer to put the email text right in the template, both the 'cms:process_forgot_password' and 'cms:process_reset_password' tags can be instructed not to send the emails and then we can do so ourselves.
 Following is a sample of how it could be done -
@@ -561,7 +561,7 @@ To wrap up our discussion on extended-users module, here is a list of all the ta
 | Login            | [**cms:process_login**](../../tags-reference/Extended-Users/process_login.md) |
 | Logout           | [**cms:process_logout**](../../tags-reference/Extended-Users/process_logout.md) |
 | Forgot Password  | [**cms:process_forgot_password**](../../tags-reference/Extended-Users/process_forgot_password.md) |
-| Reset password   | [**cms:process_reset_password**](./.../tags-reference/Extended-Users/process_reset_password.md) |
+| Reset password   | [**cms:process_reset_password**](../../tags-reference/Extended-Users/process_reset_password.md) |
 | Register Account | does not require a dedicated tag |
 | Activate account | [**cms:process_activation**](../../tags-reference/Extended-Users/process_activation.md) |
 
