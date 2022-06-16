@@ -2,15 +2,15 @@
 
 The **date** tag outputs a string according to the given _format_ parameter using the given _date_ parameter. If no _date_ provided, the current time is used.
 
-```html
+```xml
 <cms:date />
 ```
 
-```html
+```xml
 <cms:date k_page_date />
 ```
 
-```html
+```xml
 <cms:date k_page_date format='jS M, Y' />
 ```
 
@@ -156,15 +156,15 @@ By setting this parameter to '1', you can get the GMT equivalent of the date pro
 
 If you use the locale-aware format characters mentioned above, this parameter can be set to the locale desired for formatting the provided date.
 
-```html
+```xml
 <cms:date k_page_date format='%B %d, %Y' locale='french' />
 ```
 
-```html
+```xml
 <cms:date k_page_date format='%B %d, %Y' locale='italian' />
 ```
 
-```html
+```xml
 <cms:date k_page_date format='%B %d, %Y' locale='russian' charset='windows-1251'/>
 ```
 
@@ -177,11 +177,11 @@ The **date** tag can help converting the output to UTF8 if you can provide it wi
 
 For example -
 
-```html
+```xml
 <cms:date k_page_date format='%B %d, %Y' locale='greek' charset='ISO-8859-7' />
 ```
 
-```html
+```xml
 <cms:date k_page_date format='%B %d, %Y' locale='russian' charset='ISO-8859-5' />
 ```
 
@@ -258,7 +258,7 @@ Turkic languages: Azeri (Latin), Turkish, Uzbek (Latin)
 ### sample formats
 
 A few ready-to-use format examples -
-```html
+```xml
 <cms:date format='Y-m-d H:i:s' />      (MySQL)
 <cms:date format='D, d M Y H:i:s' />   (RSS)
 <cms:date format='Y-m-d\TH:i:sP' />    (Atom)
@@ -274,7 +274,7 @@ A few ready-to-use format examples -
 ### relative dates
 
 Dates can be set as strings, relative to current day or another date e.g.
-```html
+```xml
 Current -365 days: <cms:date '-365 days' />
 Current +1 day: <cms:date '+1 day' />
 Current +1 week: <cms:date '+1 week' />
@@ -297,7 +297,7 @@ A minute before midnight: <cms:date 'midnight -1 minute' format='H:i' />
 ### date comparison
 
 Compare dates with tag 'cms:if' & make sure the left-hand-side of the equation is a variable e.g.
-```html
+```xml
 <cms:set post_date="<cms:date k_page_date format='Ymd' />" />
 <cms:if post_date lt "<cms:date format='Ymd' />" >
    ...
@@ -306,7 +306,7 @@ Compare dates with tag 'cms:if' & make sure the left-hand-side of the equation i
 
 ### usage in filters
 Use variables in *custom_field* as well (always use double quotes `"` with expressions) e.g.
-```html
+```xml
 <cms:set curr_date="<cms:date format='Y-m-d H:i:s' />" />
 <cms:pages custom_field="my_date <= <cms:show curr_date />">
 ```

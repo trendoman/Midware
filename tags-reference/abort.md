@@ -2,7 +2,7 @@
 
 Tag **abort** is somewhat akin to PHP *die();*. It breaks the code execution and any code after the tag will not run.
 
-```html
+```xml
 <cms:abort />
 ```
 
@@ -15,12 +15,12 @@ Tag **abort** is somewhat akin to PHP *die();*. It breaks the code execution and
 ### msg
 
 Aborted page will display either **msg** text specified via this parameter,
-```html
+```xml
 <cms:abort msg="Not allowed." />
 ```
 or the content enclosed within tag-pair.
 
-```html
+```xml
 <cms:abort>Not allowed!</cms:abort>
 ```
 
@@ -35,7 +35,7 @@ Message from **msg** parameter or the enclosed content will be printed.
 
 If there is no message or content set, then Couch will look for the file _404.php_ in site's root and request its output to be printed instead. If the file is not found in site's root, then a simple message "Page not found" will be displayed.
 
-```html
+```xml
 <cms:abort is_404='1' />
 ```
 
@@ -43,34 +43,34 @@ If there is no message or content set, then Couch will look for the file _404.ph
 
 Parameter will instruct Couch to _not commit_ any changes made to the database during the code execution pre-abort.
 
-```html
+```xml
 <cms:abort msg='Rollback.' no_commit='1' />
 ```
 
 ## Usage
 
 Wrapped in a condition &mdash;
-```html
+```xml
 <cms:if something_drastically_not_ok>
    <cms:abort />
 </cms:if>
 ```
 
 Respects Content-Type &mdash;
-```html
+```xml
 <cms:content_type 'application/json' />
 <cms:abort>{ "error" : "1" }</cms:abort>
 ```
 
 Sets its enclosed contents as the output of the current page —
-```html
+```xml
 <cms:abort>
    <h1>Any enclosed content would be outputted before killing off the current page</h1>
 </cms:abort>
 ```
 
 Particularly helpful in handling XHR requests with [**is_ajax**](./is_ajax.md) tag, because a response can be sent back without executing code outside of **abort**.
-```html
+```xml
 <cms:if "<cms:is_ajax />">
    <cms:abort msg=response />
 </cms:if>

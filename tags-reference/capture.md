@@ -3,7 +3,7 @@
 The **capture** tag can be used to store the output of its enclosed contents within any variable.<br/>
 The enclosed contents can be regular HTML code as well as the Couch tags.
 
-```html
+```xml
 <cms:capture into='my_variable' scope='global'>
     ...everything executed here will get stored in variable 'my_variable' at the requested scope...
 </cms:capture>
@@ -14,7 +14,7 @@ If so we choose, we can ignore that output completely or check some condition fu
 It is very helpful therefore to buffer some content and display it later if needed.
 
 Another important function this tag performs is setting arrays from JSON-formatted strings.
-```html
+```xml
 <cms:capture into='identity' is_json='1'>
 {
    "name":"John",
@@ -41,7 +41,7 @@ You'll find an interesting example of this tag's use in [**Sample Portfolio Site
 
 
 A good example comes when we need to display outer HTML elements only if there is some content e.g.
-```html
+```xml
 <cms:capture into='my_buffer'>
    <h1>Reviews</h1>
    <cms:show_repeatable 'reviews' >
@@ -93,7 +93,7 @@ As you might have noted, the effect of applying this parameter will be identical
 
 The content of the tag is in json format and, if valid, the variable is converted into a multi-string array.
 
-```html
+```xml
 <cms:capture into='climate' is_json='1'>
 {
    "Russia" : {

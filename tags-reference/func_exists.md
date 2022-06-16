@@ -1,7 +1,7 @@
 # func_exists
 
 The **func_exists** tag can be used to check if a particular 'cms:func' function is available.
-```html
+```xml
 <cms:func_exists 'show-ms' />
 ```
 
@@ -9,7 +9,7 @@ The **func_exists** tag can be used to check if a particular 'cms:func' function
 
 One scenario for this tag is customization of warnings when some func is not registered.<br>
 
-```html
+```xml
 <cms:if "<cms:func_exists 'makecoffee' />">
     <cms:call 'makecoffee' />
 </cms:if>

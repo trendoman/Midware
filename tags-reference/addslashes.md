@@ -2,7 +2,7 @@
 
 The tag **addslashes** has become a necessary addition to escape characters. Very helpful in many situations where a mixture of single and double quotes creates problems.
 
-```html
+```xml
 <cms:addslashes>Welcome to the "DinoWorld"!</cms:addslashes>
 ```
 
@@ -15,7 +15,7 @@ The tag **addslashes** has become a necessary addition to escape characters. Ver
 
 Default value is *double* for the double quotes to be escaped. Alternative value is *single*.
 
-```html
+```xml
 <cms:addslashes quote='single'><cms:show test /></cms:addslashes>
 ```
 
@@ -25,7 +25,7 @@ Default value is *double* for the double quotes to be escaped. Alternative value
 
 For instance, use it with **php** tag where a PHP variable is usually set by Couch statements.
 
-```html
+```xml
 <cms:set test="O'Reilly" />
 <cms:show test />
 <cms:php>
@@ -39,7 +39,7 @@ For instance, use it with **php** tag where a PHP variable is usually set by Cou
 
 Extremely helpful in getting Couch data as json to keep output correctly formatted e.g.
 
-```html
+```xml
 <cms:content_type "application/json"/>
  [
     <cms:pages masterpage='products.php' skip_custom_fields='1'>

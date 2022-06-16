@@ -2,7 +2,7 @@
 
 The **call** tag executes a function with optional parameters. It is a self-closed tag and if used as a tag-pair will not execute anything enclosed within.
 
-```html
+```xml
 <cms:call 'read-aloud' />
 ```
 Call invokes both named functions and anonymous functions (those stored in a variable).
@@ -16,7 +16,7 @@ As for the rest, call takes any number of named/unnamed parameters (either liter
 
 ## Example
 
-```html
+```xml
 <cms:func 'makecoffee' type='cappuccino' size='medium'>
     Making a <cms:show size /> cup of <cms:show type />.<br />
 </cms:func>
@@ -33,7 +33,7 @@ As for the rest, call takes any number of named/unnamed parameters (either liter
 
 Anonymous functions are stored in a variable, hence we supply the variable itself without quotes i.e. passing by value, not by name.
 
-```html
+```xml
 <cms:func _into='my_cond' previous_work_experience=''>
     <cms:if previous_work_experience='Yes'>show<cms:else />hide</cms:if>
 </cms:func>
