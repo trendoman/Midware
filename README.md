@@ -23,7 +23,7 @@ Become the pro and rise above the competition with —
 
 ## Suggestions, requests etc
 
-Send me your work at: tony.smirnov@gmail.com<br>
+Send me your work, issues and requests at: tony.smirnov@gmail.com<br>
 
 ☺
 
