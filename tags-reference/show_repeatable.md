@@ -1,6 +1,6 @@
 # show_repeatable
 
-Please see [**Core Concepts - Repeatable Regions**](https://docs.couchcms.com/concepts/repeatable-regions.html#displaying-the-values) for an in-depth discussion about this tag.
+Please visit [**&raquo; Core Concepts - Repeatable Regions**](https://docs.couchcms.com/concepts/repeatable-regions.html#displaying-the-values) for an in-depth discussion about this tag.
 
 ```xml
 <cms:show_repeatable 'my_multiple_images'>
@@ -15,10 +15,10 @@ Please see [**Core Concepts - Repeatable Regions**](https://docs.couchcms.com/co
 * limit
 * offset
 * order
-* extended_info
 * as_json
 * into
 * scope
+* extended_info
 * token
 
 ### var
