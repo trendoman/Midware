@@ -9,8 +9,8 @@
 * ## [EXTENDED USERS](tutorials/Extended-Users) ○ TUTORIAL
   Added new intro; proofreading
 * ## [cms:not](tags-reference/not.md)
-* ## [cms:process_activation](tags-reference/process_activation.md)
-* ## [cms:activation_link](tags-reference/activation_link.md)
+* ## [cms:process_activation](tags-reference/Extended-Users/process_activation.md)
+* ## [cms:activation_link](tags-reference/Extended-Users/activation_link.md)
 * ## [cms:show_repeatable](tags-reference/show_repeatable.md)
   Added 8 new parameters; 4 more variables; Examples
 * ## [cms:addslashes](tags-reference/addslashes.md)
