@@ -1,6 +1,7 @@
 # func_exists
 
 The **func_exists** tag can be used to check if a particular 'cms:func' function is available.
+
 ```xml
 <cms:func_exists 'show-ms' />
 ```
@@ -25,5 +26,6 @@ This tag is self-closing and does not set any variables of its own.
 
 ## Related Tags
 
+* [**call**](./call.md)
 * [**func**](./func.md)
 * [**tag_exists**](./tag_exists.md)

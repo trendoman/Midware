@@ -27,18 +27,21 @@ The **date** tag outputs a string according to the given _format_ parameter usin
 The date to be formated.<br>
 This parameter is expected to be in '_Y-m-d H:i:s_' format (e.g. 2010-05-30 21:35:54). All date related variables set by Couch tags, e.g. *k_page_date*, *k_page_modification_date*, *k_archive_date* etc., are in this format.
 
-If date is omitted, current date is taken with regard to variable '_K_GMT_OFFSET_' from CouchCMS configuration file (_config.php_).
+If date is omitted, current date is taken with regard to variable '_K_GMT_OFFSET_' from CouchCMS configuration file (`couch/config.php`).
 
 ### format
 
 The **date** tag supports two different types of format characters - locale-aware and non locale-aware.<br>
-With locale-aware characters, you can specify that the date is to formatted according to, for example, _french_ locale or _italian_ locale by setting the _locale_ parameter.<br>
+With locale-aware characters, you can specify that the date is to formatted according to, for example, _french_ locale or _italian_ locale by setting the **locale** parameter.<br>
 The locale-aware characters all have a % sign prefixed to them.
 
 If parameter **format** is omitted the default is assumed i.e. `format='F d, Y'`
 
-<p class="error">The locale-aware and the non locale-aware characters cannot be intermixed.</p>
+---
 
+**The locale-aware and the non locale-aware characters cannot be intermixed.**
+
+<br>
 
 #### Non Locale-aware format characters
 
@@ -305,12 +308,13 @@ Compare dates with tag 'cms:if' & make sure the left-hand-side of the equation i
 ```
 
 ### usage in filters
+
 Use variables in *custom_field* as well (always use double quotes `"` with expressions) e.g.
+
 ```xml
 <cms:set curr_date="<cms:date format='Y-m-d H:i:s' />" />
 <cms:pages custom_field="my_date <= <cms:show curr_date />">
 ```
-
 
 ## Variables
 
@@ -318,4 +322,4 @@ This tag is self-closing and does not set any variables of its own.
 
 ## Related Tags
 
-* [number_format](./number_format.html)
+* [**Documentation &raquo; number_format**](https://docs.couchcms.com/tags-reference/number_format.html)

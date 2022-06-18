@@ -2,7 +2,7 @@
 
 The **trim** tag is used to strip whitespace from the beginning and end of a string.
 
-```html
+```xml
 <cms:trim ' Is there any luck?' />
 ```
 
@@ -18,7 +18,7 @@ There are numerous occasions where a trimmed output is desired. For instance, wo
 
 ## Example
 
-```html
+```xml
 <cms:trim><cms:call 'some_func' /></cms:trim>
 
 <cms:trim some_var />

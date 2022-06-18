@@ -1,6 +1,6 @@
 # show_repeatable
 
-Please visit [**&raquo; Core Concepts - Repeatable Regions**](https://docs.couchcms.com/concepts/repeatable-regions.html#displaying-the-values) for an in-depth discussion about this tag.
+Please visit [**Documentation &raquo; Core Concepts - Repeatable Regions**](https://docs.couchcms.com/concepts/repeatable-regions.html#displaying-the-values) for an in-depth discussion about this tag.
 
 ```xml
 <cms:show_repeatable 'my_multiple_images'>
@@ -235,5 +235,9 @@ An object of this name is set if [**extended_info**](#extended_info) param is se
 
 ## Related tags
 
-* [**&raquo; repeatable**](https://docs.couchcms.com/tags-reference/repeatable.html)
-* [**&raquo; pages**](https://docs.couchcms.com/tags-reference/pages.html)
+* [**Documentation &raquo; repeatable**](https://docs.couchcms.com/tags-reference/repeatable.html)
+* [**Documentation &raquo; pages**](https://docs.couchcms.com/tags-reference/pages.html)
+
+## Related pages
+
+[**Documentation &raquo; Core Concepts - Repeatable Regions**](https://docs.couchcms.com/concepts/repeatable-regions.html#displaying-the-values)

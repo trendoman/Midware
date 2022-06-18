@@ -1,15 +1,16 @@
 # func
 
-The **func** tag works by wrapping a piece of code and executing it sometime later upon a call. Unlike 'cms:capture' the code is not executed immediately.<br>
+The **func** tag works by wrapping a piece of code and executing it sometime later upon a call. Unlike 'cms:capture' the code is not executed immediately.
+
 Enclosed code may be configured to output different results depending on different values of its variables. Tag 'cms:func' then  helps define such variables and, titled with a name, becomes a powerful instrument with unlimited function.
 
-```html
+```xml
 <cms:func 'makecoffee' type='cappuccino' size='medium'>
     Making a <cms:show size /> cup of <cms:show type />.
 </cms:func>
 ```
 
-Functions can be **named** and **anonymous**.<br>
+Functions can be **named** and **anonymous**.
 
 **Anonymous** functions are not registered with Couch and their code is only saved to a variable. Often used in conditional fields, they fulfill an auxiliary role and can be configured to appear within a specific **scope** &ndash; *global*, *local* or *parent*. This feature allows to view them as 'helpers' that perform some action and disappear outside their scope, mimicking the behaviour or regular variables. Functions defined with the same name can 'replace' the previous ones.
 
@@ -34,7 +35,7 @@ Both named and anonymous functions can have an unlimited number of user-defined 
 
 ## Example
 
-```html
+```xml
 <cms:func 'makecoffee' type='cappuccino' size='medium'>
     Making a <cms:show size /> cup of <cms:show type />.
 </cms:func>
@@ -53,7 +54,7 @@ Briefly take a look at the last, third, example above and note how the order of 
 
 Anonymous functions are stored in a variable. To call such function we supply the variable itself without quotes i.e. passing by value, not by name.
 
-```html
+```xml
 <cms:func _into='my_cond' previous_work_experience=''>
     <cms:if previous_work_experience='Yes'>show<cms:else />hide</cms:if>
 </cms:func>
@@ -65,7 +66,8 @@ Anonymous functions are stored in a variable. To call such function we supply th
 Functions can accept any kind of value to its parameter - strings, arrays, even other anonymous functions.
 
 The following example illustrates a method of **callback** - a function's name is passed as a parameter and will be called upon.
-```html
+
+```xml
 <cms:func 'purchase' product='' amount='' reason=''>
     I have purchased a <cms:show product /> for <cms:show amount />.
     I want to <cms:call reason />
@@ -84,6 +86,7 @@ The following example illustrates a method of **callback** - a function's name i
 <cms:call 'purchase' 'tour' '$500' travel />
 => I have purchased a tour for $500. I want to see the world.
 ```
+
 In the example above there is no need for complicated conditions within the main function 'purchase'. Also if the number of reasons grows, there is no need to edit that function! Simply adding a smaller 'reason' function we achieve the desired effect. Here 'reason' is a callback function.
 
 ## Variables
@@ -96,11 +99,11 @@ Couch additionally sets 3 special variables available only within 'cms:func' dur
 * k_args
 * k_named_args
 
-
 ### k\_func
 
 Variable **k\_func** contains either name of the function or a word: *anonymous*. Variable can be used, for example, in detailed logs such as this &mdash;
-```html
+
+```xml
 <cms:func 'generate-sitemap' >
     ...
     <cms:log msg="Function [ <cms:show k_func /> ] has been called." />
@@ -111,7 +114,8 @@ Variable **k\_func** contains either name of the function or a word: *anonymous*
 ### k\_args
 
 It provides a programmatic access to the arguments passed alongside the call. Variable **k\_args** is an array, e.g.
-```html
+
+```xml
 <cms:func 'makecoffee' type='cappuccino' size='medium'>
     <cms:show k_args as_json='1' />
 </cms:func>
@@ -129,7 +133,8 @@ It provides a programmatic access to the arguments passed alongside the call. Va
 ### k\_named_args
 
 Variable **k\_named_args** presents an array of passed named arguments, completely skipping unnamed e.g.
-```html
+
+```xml
 <cms:func 'makecoffee' type='cappuccino' size='medium'>
     <cms:show k_named_args as_json='1' />
 </cms:func>
@@ -144,7 +149,8 @@ Variable **k\_named_args** presents an array of passed named arguments, complete
 ---
 
 A last (but not the least) feature of **k_args** and **k_named_args** variables: they can get access not only to the parameters defined by 'cms:func', but to any number of extra parameters passed by a caller &mdash;
-```html
+
+```xml
 <cms:func 'makecoffee' type='cappuccino' size='medium'>..</cms:func>
 
 <cms:call 'makecoffee' 'espresso' 'large' when='now' for='a friend' />

@@ -4,7 +4,7 @@ Tag **is_ajax** detects a *xmlhttprequest* value in headers of a request, readin
 
 In essense it is a flag that signals *1* for any programmatic xhr (ajax) request.
 
-```html
+```xml
 <cms:is_ajax/>
 ```
 Tag does not break code execution.
@@ -12,13 +12,16 @@ Tag does not break code execution.
 ## Usage
 
 Allows to prepare some response for a visitor &mdash;
-```html
+
+```xml
 <cms:if "<cms:is_ajax />">
    ..response..
 </cms:if>
 ```
+
 Pair it with **abort** tag and, if needed, **content_type** tag to send back JSON e.g.
-```html
+
+```xml
 <cms:if "<cms:is_ajax />" >
    <cms:content_type 'application/json' />
    <cms:abort>{}</cms:abort>

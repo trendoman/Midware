@@ -13,13 +13,13 @@ Please see [**Core Concepts - RSS Feeds**](https://docs.couchcms.com/concepts/rs
 
 ## Parameters
 
-*   value
+* value
 
 ### value
 
 The desired content type.
 
-A comprehensive list of types can be examined at [MDN Web docs](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types).
+A comprehensive list of types can be examined at [**&raquo; MDN Web docs**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types).
 
 ## Common types
 
@@ -101,3 +101,12 @@ Following is a basic list of common types &ndash;
 ## Variables
 
 This tag is self-closing and does not set any variables of its own.
+
+## Related tags
+
+* [**abort**](abort.md)
+* [**is_ajax**](is_ajax.md)
+
+## Related pages
+
+* A comprehensive list of types can be examined at [**&raquo; MDN Web docs**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types).

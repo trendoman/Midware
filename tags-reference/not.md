@@ -1,5 +1,7 @@
 # not
+
 The tag **not** is used to test the 'reverse' of a logical statement.
+
 ```xml
 <cms:not condition />
 ```
@@ -30,6 +32,6 @@ The last example looks overburdened with nesting. Such cases  tag [**is_not**](h
 
 ## Related Tags
 
-* [**&raquo; if**](https://docs.couchcms.com/tags-reference/if.html)
-* [**&raquo; else**](https://docs.couchcms.com/tags-reference/else.html)
+* [**Documentation &raquo; if**](https://docs.couchcms.com/tags-reference/if.html)
+* [**Documentation &raquo; else**](https://docs.couchcms.com/tags-reference/else.html)
 * [**else_if**](./else_if.md)

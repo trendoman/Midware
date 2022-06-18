@@ -51,8 +51,7 @@ Sets no variables of its own.
 * [**func**](./func.md)
 * [**func_exists**](./func_exists.md)
 
+## Related pages
 
-## Links
-
-- An exemplar tutorial on using functions as well as examples are in [this post](https://www.couchcms.com/forum/viewtopic.php?f=8&t=11368&start=10#p30174)
-- Invoking anonymous functions in Conditional Fields is explained in tutorial in [this topic](https://www.couchcms.com/forum/viewtopic.php?f=5&t=11512)
+* An exemplar tutorial on using functions as well as examples are in [&raquo; forum post](https://www.couchcms.com/forum/viewtopic.php?f=8&t=11368&start=10#p30174)
+* Invoking anonymous functions in Conditional Fields is explained in tutorial in [&raquo; forum topic](https://www.couchcms.com/forum/viewtopic.php?f=5&t=11512)

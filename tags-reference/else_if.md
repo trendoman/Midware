@@ -1,6 +1,7 @@
 # else_if
 
 Tag has been created to unclutter conditional statements. It must be self-closed.
+
 ```xml
 <cms:else_if />
 ```
@@ -13,7 +14,9 @@ Tag has been created to unclutter conditional statements. It must be self-closed
 <cms:else />
 </cms:if>
 ```
+
 Same structure with a more 'grounded' example &mdash;
+
 ```xml
 <cms:if day = 'Saturday' || day = 'Sunday' >
    Hooray, it's a weekend!
@@ -24,8 +27,7 @@ Same structure with a more 'grounded' example &mdash;
 </cms:if>
 ```
 
-
-With the current logic tags (`cms:if` and `cms:else`) it isn't uncommon to find oneself in a rather 'heavily-nested' situation. A lot of screen space is lost in the text editor and, more importantly, it can also make reading code somewhat challenging. Let's use Couch's standard view handling as an example:
+With the current logic tags ('cms:if' and 'cms:else') it isn't uncommon to find oneself in a rather 'heavily-nested' situation. A lot of screen space is lost in the text editor and, more importantly, it can also make reading code somewhat challenging. Let's use Couch's standard view handling as an example:
 
 ```xml
 <cms:if k_is_page >
@@ -69,6 +71,6 @@ This tag does not set any variables of its own.
 
 ## Related Tags
 
-* **if**
-* **else**
-* **not**
+* [**Documentation &raquo; if**](https://docs.couchcms.com/tags-reference/if.html)
+* [**Documentation &raquo; else**](https://docs.couchcms.com/tags-reference/else.html)
+* [**not**](not.md)

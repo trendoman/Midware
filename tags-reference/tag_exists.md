@@ -1,16 +1,18 @@
 # tag_exists
 
 The **tag_exists** tag can be used to check if a particular tag is available.
-```html
+
+```xml
 <cms:tag_exists 'show_json' />
 ```
 
 ## Usage
 
-One scenario for this tag is customization of warnings when some tag is not registered.<br>
-Addons commonly have their own set of tags, and those may not be available at the moment the code is running. This often happens when addon is forgot to be installed or registered via 'kfunctions' file.
+One scenario for this tag is customization of warnings when some tag is not registered.
 
-```html
+Addons commonly have their own set of tags, and those may not be available at the moment the code is running. This often happens when addon is forgot to be installed or registered via `couch/addons/kfunctions.php` file.
+
+```xml
 <cms:if "<cms:tag_exists 'process_login' />">
     ...
     processing ok

@@ -113,4 +113,4 @@ Sets only the variable specified by the __into__ parameter within the specified 
 
 ## Related tags
 
-* **set**
+* [**Documentation &raquo; set**](https://docs.couchcms.com/tags-reference/set.html)
