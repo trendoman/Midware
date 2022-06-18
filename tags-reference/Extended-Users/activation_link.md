@@ -1,6 +1,6 @@
-# activation_link
+# activation_link • [**Extended Users**](../../tutorials/Extended-Users)
 
-Tag **cms:activation_link** helps get the registration activation link and belongs to [Extended Users](https://www.couchcms.com/docs/extended-entities/post.htm) addon.
+Tag **cms:activation_link** helps get the registration activation link and belongs to the [**Extended Users**](../../tutorials/Extended-Users) addon's tags [suite](#related-tags).
 
 ```xml
 <cms:activation_link user='example@example.me' />
@@ -45,4 +45,9 @@ This tag does not set any variables of its own.
 ## Related tags
 
 * [**process_activation**](./process_activation.md)
-
+* **login_link**
+* **logout_link**
+* **process_login**
+* **process_logout**
+* **process_forgot_password**
+* **process_reset_password**

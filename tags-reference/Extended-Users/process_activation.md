@@ -1,10 +1,10 @@
-# process_activation
+# process_activation • [**Extended Users**](../../tutorials/Extended-Users)
 
 Tag **cms:process_activation** handles account activation for the user that visited template using the activation link we emailed her.
 
 Successful activation sets account active and enables user to log in.
 
-Tag is self-closed and belongs to the [Extended Users](https://www.couchcms.com/docs/extended-entities/post.htm) addon.
+Tag is self-closed and belongs to the [**Extended Users**](../../tutorials/Extended-Users) addon's tags [suite](#related-tags).
 ```xml
 <cms:process_activation />
 ```
@@ -48,4 +48,9 @@ Tag will set context variables —
 ## Related tags
 
 * [**activation_link**](./activation_link.md)
-
+* **login_link**
+* **logout_link**
+* **process_login**
+* **process_logout**
+* **process_forgot_password**
+* **process_reset_password**
