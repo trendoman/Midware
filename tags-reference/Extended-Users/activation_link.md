@@ -1,6 +1,6 @@
-# activation_link • [**Extended Users**](../../tutorials/Extended-Users)
+# activation_link • [**Extended Users**](#related-pages)
 
-Tag **cms:activation_link** helps get the registration activation link and belongs to the [**Extended Users**](../../tutorials/Extended-Users) addon's tags [suite](#related-tags).
+Tag **cms:activation_link** helps get the registration activation link and belongs to the [Extended Users](#related-pages) addon's tags [suite](#related-tags).
 
 ```xml
 <cms:activation_link user='example@example.me' />
@@ -51,3 +51,7 @@ This tag does not set any variables of its own.
 * **process_logout**
 * **process_forgot_password**
 * **process_reset_password**
+
+## Related pages
+
+* [**Extended Users – Tutorial**](../../tutorials/Extended-Users)

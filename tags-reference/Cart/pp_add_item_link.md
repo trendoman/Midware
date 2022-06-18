@@ -1,4 +1,4 @@
-# pp_add_item_link
+# pp_add_item_link • [**Shopping Cart**](#related-pages)
 
 Tag **cms:pp_add_item_link** outputs a link that Couch treats as 'Add Item' action in [CouchCart](#related-pages) Addon.
 
