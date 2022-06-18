@@ -111,11 +111,11 @@ Let us begin with the 'users/index.php' template.
 
 This template, as all other mentioned above, is just a regular Couch template and so, as per usual, the first step in implementing it is to register it.
 
-To repeat the obvious - login into the admin-panel as super-admin and then in the same browser (or another tab of it), type http://www.yoursite.com/users/index.php in the address bar (replacing the 'www.yoursite.com' with your site's URL, of course). This will execute the template and register it. Coming back to the admin-panel and refreshing it should show the template's name in the sidebar (if the name does not show up in the sidebar, something is wrong and the template has not been registered).
+To repeat the obvious - login into the admin-panel as super-admin and then in the same browser (or another tab of it), type `http://www.yoursite.com/users/index.php` in the address bar (replacing the `www.yoursite.com` with your site's URL, of course). This will execute the template and register it. Coming back to the admin-panel and refreshing it should show the template's name in the sidebar (if the name does not show up in the sidebar, something is wrong and the template has not been registered).
 
 Unpublish the default-page to get it out of the way.
 
-At this point, we have our user template ready but one last step remains before we can use to create/extend user accounts. You'll find a file named 'config.sample.php' within 'couch/addons/extended/' folder. Rename it to 'config.php'. Open it up in your text editor and specify the name of our user template (i.e. 'users/index.php') as value of the 'users_tpl' setting as follows
+At this point, we have our user template ready but one last step remains before we can use to create/extend user accounts. You'll find a file named `config.sample.php` within 'couch/addons/extended/' folder. Rename it to `config.php`. Open it up in your text editor and specify the name of our user template (i.e. 'users/index.php') as value of the 'users_tpl' setting as follows
 
 Before:
 ```php

@@ -3,6 +3,7 @@
 ## Defaults
 
 Couch follows the Cart Config at 'addons/cart/config.php' but implies *default values* if not configured e.g.
+
 ```php
 tpl_products = 'products.php'
 tpl_cart = 'cart.php'
@@ -17,6 +18,7 @@ allow_decimal_qty' = '0'
 ## Programmatic access
 
 Complete Cart data is stored in session variable **kcart** and contains following details —
+
 ```txt
  items                      sub_total_discounted
  count_items                taxes
@@ -28,6 +30,7 @@ Complete Cart data is stored in session variable **kcart** and contains followin
 ## Actions
 
 Query string parameter **kcart_action** is universal for all actions in CouchCart and takes numeric values e.g.
+
 ```html
 '?kcart_action=1' — Add Item action
 '?kcart_action=2' — Update Item action
