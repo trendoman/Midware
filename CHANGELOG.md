@@ -1,6 +1,8 @@
 # What's new in M.i.d.ware
 *Latest on top*
 
+* ## [cms:arr_key_exists](tags-reference/Arrays/arr_key_exists.md)
+* ## [COUCH ARRAYS](tutorials/Arrays) ○ TUTORIAL
 * ## [CUSTOM ROUTES](tutorials/Custom-Routes) ○ TUTORIAL
 * ## [Tips for Cart developer](tags-reference/Cart/TIPS.md)
   Cart actions; programmatic access; cart defaults etc.
