@@ -28,7 +28,7 @@ The tag **not** is used to test the 'reverse' of a logical statement.
 <cms:if "<cms:not "<cms:is 'en' in=langcodes />" />"></cms:if>
 ```
 
-The last example looks overburdened with nesting. Such use-cases justify a [**custom tag &raquo; is_not**](https://github.com/trendoman/Tweakus-Dilectus/tree/main/anton.cms%40ya.ru__tags-new/is_not/).
+The last example looks overburdened with nesting. Such use-cases justify a custom tag [**is_not**](#related-tags)
 
 ## Related tags
 

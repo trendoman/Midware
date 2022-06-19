@@ -23,7 +23,7 @@ Please visit [**Documentation &raquo; Core Concepts - Repeatable Regions**](http
 
 ### var
 
-Default parameter (usually left unnamed). The name of the [**repeatable**](https://docs.couchcms.com/tags-reference/repeatable.html) tag defining the repeatable regions.
+Default parameter (usually left unnamed). The name of the [**repeatable**](#related-tags) tag defining the repeatable regions.
 
 ```xml
 <cms:show_repeatable 'my_multiple_images' >
@@ -33,7 +33,7 @@ Default parameter (usually left unnamed). The name of the [**repeatable**](https
 </cms:show_repeatable>
 ```
 
-In the snippet above the string 'my_multiple_images' is the name of a [**repeatable**](https://docs.couchcms.com/tags-reference/repeatable.html) tag.
+In the snippet above the string 'my_multiple_images' is the name of a [**repeatable**](#related-tags) tag.
 
 ### startcount
 
@@ -49,7 +49,6 @@ The value of this variable is '1' in the first iteration and keeps increasing wi
 
 The **startcount** param serves to set the initial value of **k_count** (default value being *1*).
 So, `startcount='0'` will make **k_count** go *0*, *1*, *2* etc. while `startcount='3'` will make it *3*, *4*, *5* and so on.
-
 
 ### limit
 
@@ -92,6 +91,7 @@ Default is *0*. If set, **show_repeatable** will return rows as a JSON-formatted
 ```xml
 <cms:show_repeatable 'offices' as_json='1' />
 ```
+
 Tag can be self-closed in this scenario.
 
 If your intention is to manipulate the JSON, it is best to capture tag's output into a variable. Tags [**capture**](./capture.md#is_json) and **set** certainly help, but **show_repeatable** already has a special provision for this use-case — use the **into** parameter described below.
@@ -104,6 +104,7 @@ If **into** param is set, **show_repeatable** sets the data it possesses for the
 ```xml
 <cms:show_repeatable 'offices' into='offices_as_json' scope='global' />
 ```
+
 Alongside **into** must be present the parameter **scope** which possible values are —
 * parent
 * global
@@ -119,7 +120,6 @@ This parameter provides access to the full system information of the repeatable'
    </cms:db_fields>
 </cms:show_repeatable>
 ```
-
 
 Each row of the repeatable-region would appear as a collection of its fields, packed, for simplicity, into a dummy 'page'. Unlike usual 'pages', this one doesn't have anything besides the details on the fields, attached to it. So the inner tags that will 'bind' to that dummy object will be able to fetch info in the usual manner.
 
@@ -159,11 +159,13 @@ The following will show only the second row –
 ```
 
 The following will show only the last row –
+
 ```xml
 <cms:show_repeatable 'offices' limit='1' order='desc' >..
 ```
 
 while the following will show only the second-last row –
+
 ```xml
 <cms:show_repeatable 'offices' limit='1' offset='1' order='desc' >..
 ```
@@ -175,6 +177,7 @@ The following will print all rows data as JSON-formatted string –
 ```
 
 Here is the JSON output of rows, as a couple of offices were added in admin-panel –
+
 ```js
 [
    {

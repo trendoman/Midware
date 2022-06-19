@@ -54,4 +54,4 @@ This tag does not set any variables of its own.
 
 ## Related pages
 
-* [**Extended Users – Tutorial**](../../tutorials/Extended-Users)
+* [**Core Concepts &raquo; Extended Users**](/concepts/Extended-Users)

@@ -89,7 +89,7 @@ If parameter **format** is omitted the default is assumed i.e. `format='F d, Y'`
 | _Z_ | Timezone offset in seconds. The offset for timezones west of UTC is always negative, and for those east of UTC is always positive. | _-43200_ through _50400_ |
 | <span style="display:block; text-align:center;">_**Full&nbsp;Date/Time**_</span> | \--- | \--- |
 | _c_ |	ISO 8601 date |	_2004-02-12T15:19:21+00:00_ |
-| _r_ | [» RFC 2822](http://www.faqs.org/rfcs/rfc2822) formatted date | Example: _Thu, 21 Dec 2000 16:01:07 +0200_ |
+| _r_ | [faqs.org » RFC 2822](http://www.faqs.org/rfcs/rfc2822) formatted date | Example: _Thu, 21 Dec 2000 16:01:07 +0200_ |
 | _U_ | Seconds since the Unix Epoch (January 1 1970 00:00:00 GMT) | |
 
 <br>
@@ -171,7 +171,7 @@ If you use the locale-aware format characters mentioned above, this parameter ca
 <cms:date k_page_date format='%B %d, %Y' locale='russian' charset='windows-1251'/>
 ```
 
-<p class="error">This feature depends entirely on the indicated locale being available at your web server. If the locale is not available, the default 'english' locale is used.</p>
+This feature depends entirely on the indicated locale being available at your web server. If the locale is not available, the default 'english' locale is used.
 
 ### charset
 
@@ -261,6 +261,7 @@ Turkic languages: Azeri (Latin), Turkish, Uzbek (Latin)
 ### sample formats
 
 A few ready-to-use format examples -
+
 ```xml
 <cms:date format='Y-m-d H:i:s' />      (MySQL)
 <cms:date format='D, d M Y H:i:s' />   (RSS)
@@ -277,6 +278,7 @@ A few ready-to-use format examples -
 ### relative dates
 
 Dates can be set as strings, relative to current day or another date e.g.
+
 ```xml
 Current -365 days: <cms:date '-365 days' />
 Current +1 day: <cms:date '+1 day' />
@@ -300,6 +302,7 @@ A minute before midnight: <cms:date 'midnight -1 minute' format='H:i' />
 ### date comparison
 
 Compare dates with tag 'cms:if' & make sure the left-hand-side of the equation is a variable e.g.
+
 ```xml
 <cms:set post_date="<cms:date k_page_date format='Ymd' />" />
 <cms:if post_date lt "<cms:date format='Ymd' />" >

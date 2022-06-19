@@ -41,4 +41,4 @@ or 'age' –
 
 ## Related pages
 
-* [**Couch Arrays – Tutorial**](../../tutorials/Arrays)
+* [**Core Concepts &raquo; Couch Arrays**](/concepts/Arrays)

@@ -9,7 +9,7 @@ As an example, the RSS feed requires it content type to be set as '_text/xml_' f
 <cms:content_type 'text/xml' />
 ```
 
-Please see [**Core Concepts - RSS Feeds**](https://docs.couchcms.com/concepts/rss-feeds.html) for an example of the usage of this tag.
+Please see [**Documentation &raquo; Core Concepts - RSS Feeds**](https://docs.couchcms.com/concepts/rss-feeds.html) for an example of the usage of this tag.
 
 ## Parameters
 
@@ -19,7 +19,7 @@ Please see [**Core Concepts - RSS Feeds**](https://docs.couchcms.com/concepts/rs
 
 The desired content type.
 
-A comprehensive list of types can be examined at [**&raquo; MDN Web docs**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types).
+A comprehensive list of types can be examined at [**MDN &raquo; Web docs**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types).
 
 ## Common types
 
@@ -109,4 +109,4 @@ This tag is self-closing and does not set any variables of its own.
 
 ## Related pages
 
-* A comprehensive list of types can be examined at [**&raquo; MDN Web docs**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types).
+* A comprehensive list of types can be examined at [**MDN &raquo; Web docs**](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types/Common_types).

@@ -9,11 +9,14 @@ The enclosed contents can be regular HTML code as well as the Couch tags.
 </cms:capture>
 ```
 
-The important point is that by 'capturing' we execute some code but do not display its output immediately.<br>
-If so we choose, we can ignore that output completely or check some condition further on and then show it.<br>
-It is very helpful therefore to buffer some content and display it later if needed.
+---
+
+The important point is that by 'capturing' we execute some code but do not display its output immediately. If so we choose, we can ignore that output completely or check some condition further on and then show it. It is very helpful therefore to buffer some content and display it later if needed.
+
+---
 
 Another important function this tag performs is setting arrays from JSON-formatted strings.
+
 ```xml
 <cms:capture into='identity' is_json='1'>
 {
@@ -28,8 +31,8 @@ Another important function this tag performs is setting arrays from JSON-formatt
 <cms:show identity.cars.1 />
 => BMW
 ```
-Usual tag 'cms:set' does the same job, but **capture** is easier with larger JSONs or when there are tags or code within the block.
 
+Usual tag 'cms:set' does the same job, but **capture** is easier with larger JSONs or when there are tags or code within the block.
 
 ## Example
 
@@ -37,10 +40,10 @@ This tag is very helpful when you want to execute a portion of the code but wish
 
 This situation can be tackled by storing the output of the block of code in a variable for the time being. When we reach the required condition and if it evaluates to be true, we can display the output by showing the variable. However, if the condition fails, we can simply ignore the variable.
 
-You'll find an interesting example of this tag's use in [**Sample Portfolio Site - Contact Form**](https://docs.couchcms.com/tutorials/portfolio-site/contact-form.html)
-
+You'll find an interesting example of this tag's use in [**Documentation &raquo; Sample Portfolio Site - Contact Form**](https://docs.couchcms.com/tutorials/portfolio-site/contact-form.html)
 
 A good example comes when we need to display outer HTML elements only if there is some content e.g.
+
 ```xml
 <cms:capture into='my_buffer'>
    <h1>Reviews</h1>
@@ -52,8 +55,8 @@ A good example comes when we need to display outer HTML elements only if there i
 
 <cms:if has_reviews ><cms:show my_buffer /></cms:if>
 ```
-Note how outer _&lt;h1&gt;_ heading will be displayed only if there are some reviews.
 
+Note how outer _&lt;h1&gt;_ heading will be displayed only if there are some reviews.
 
 ## Parameters
 

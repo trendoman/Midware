@@ -41,18 +41,17 @@ Extremely helpful in getting Couch data as json to keep output correctly formatt
 
 ```xml
 <cms:content_type "application/json"/>
- [
-    <cms:pages masterpage='products.php' skip_custom_fields='1'>
-       {
+[
+   <cms:pages masterpage='products.php' skip_custom_fields='1'>
+      {
          "name":"<cms:addslashes><cms:show k_page_title/></cms:addslashes>",
          "link":"<cms:addslashes><cms:show k_page_link/></cms:addslashes>"
-       }<cms:if "<cms:not k_paginated_bottom/>">,</cms:if>
-     </cms:pages>
- ]
+      }<cms:if "<cms:not k_paginated_bottom/>">,</cms:if>
+   </cms:pages>
+]
 ```
-<!--
 
 ## Related Tags
 
--->
-
+* **escape_json**
+* [**Tweakus-Dilectus &raquo; show_json**](https://github.com/trendoman/Tweakus-Dilectus/tree/main/anton.cms%40ya.ru__tags-new/show_json/)

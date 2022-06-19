@@ -5,6 +5,7 @@ Tag **cms:process_activation** handles account activation for the user that visi
 Successful activation sets account active and enables user to log in.
 
 Tag is self-closed and belongs to the [Extended Users](#related-pages) addon's tags [suite](#related-tags).
+
 ```xml
 <cms:process_activation />
 ```
@@ -12,7 +13,6 @@ Tag is self-closed and belongs to the [Extended Users](#related-pages) addon's t
 ## Parameters
 
 Tag expects no parameters.
-
 
 ## Usage
 
@@ -25,6 +25,7 @@ Tag looks for the query string parameter **key** from the URL and performs in ba
 User will be activated if all three succeed.
 
 Next, you may take action depending on the result using the variables that this tag sets, namely &ndash; **k_success** and **k_error**.
+
 ```xml
 <cms:process_activation />
 
@@ -55,7 +56,6 @@ Tag will set context variables —
 * **process_forgot_password**
 * **process_reset_password**
 
-
 ## Related pages
 
-* [**Extended Users – Tutorial**](../../tutorials/Extended-Users)
+* [**Core Concepts &raquo; Extended Users**](/concepts/Extended-Users)

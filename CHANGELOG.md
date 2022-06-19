@@ -2,13 +2,13 @@
 *Latest on top*
 
 * ## [cms:arr_key_exists](tags-reference/Arrays/arr_key_exists.md)
-* ## [COUCH ARRAYS](tutorials/Arrays) ○ TUTORIAL
-* ## [CUSTOM ROUTES](tutorials/Custom-Routes) ○ TUTORIAL
+* ## [COUCH ARRAYS](concepts/Arrays) ○ CONCEPT
+* ## [CUSTOM ROUTES](concepts/Custom-Routes) ○ CONCEPT
 * ## [Tips for Cart developer](tags-reference/Cart/TIPS.md)
   Cart actions; programmatic access; cart defaults etc.
 * ## [cms:pp_add_item_link](tags-reference/Cart/pp_add_item_link.md)
 * ## [cms:break](tags-reference/break.md)
-* ## [EXTENDED USERS](tutorials/Extended-Users) ○ TUTORIAL
+* ## [EXTENDED USERS](concepts/Extended-Users) ○ CONCEPT
   Added new intro; proofreading
 * ## [cms:not](tags-reference/not.md)
 * ## [cms:process_activation](tags-reference/Extended-Users/process_activation.md)

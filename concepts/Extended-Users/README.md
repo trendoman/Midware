@@ -534,6 +534,7 @@ Rest of the code is pretty regular. If you have defined new editable regions in 
 As an aside, since the topic of custom editable regions has come up, suppose we have defined some new regions in the user template e.g. 'avatar', 'sex', 'DOB' etc. How do we display the values of these regions associated with a particular user (e.g. the currently logged-in user) on other pages of the site?
 
 You probably would have guessed the answer - it is our trusty cms:pages tag. E.g. the following code will display all the data about the current logged-in user
+
 ```xml
 <cms:if k_logged_in >
     <cms:pages masterpage=k_user_template id=k_user_id limit='1'>
@@ -541,9 +542,11 @@ You probably would have guessed the answer - it is our trusty cms:pages tag. E.g
     </cms:pages>
 </cms:if>
 ```
+
 The key is the 'masterpage' parameter set to our user template and the 'id' parameter set to current logged-in user (we have placed the cms:pages block within the 'k_logged_in' check because 'k_user_id' is available only if the user is logged in).
 
 As another example, the same cms:pages loop can be modified to show data about all registered users
+
 ```xml
 <cms:pages masterpage=k_user_template limit='50' paginate='1'>
     <cms:dump />
@@ -558,12 +561,15 @@ To wrap up our discussion on extended-users module, here is a list of all the ta
 
 |       function   |  tag  |
 |-----------------:|:-------------|
-| Login            | [**cms:process_login**](../../tags-reference/Extended-Users/process_login.md) |
-| Logout           | [**cms:process_logout**](../../tags-reference/Extended-Users/process_logout.md) |
-| Forgot Password  | [**cms:process_forgot_password**](../../tags-reference/Extended-Users/process_forgot_password.md) |
-| Reset password   | [**cms:process_reset_password**](../../tags-reference/Extended-Users/process_reset_password.md) |
+| Login            | **cms:process_login**<!--[**cms:process_login**](/tags-reference/Extended-Users/process_login.md)--> |
+| Logout           | **cms:process_logout**<!--[**cms:process_logout**](/tags-reference/Extended-Users/process_logout.md)--> |
+| Forgot Password  | **cms:process_forgot_password**<!--[**cms:process_forgot_password**](/tags-reference/Extended-Users/process_forgot_password.md)--> |
+| Reset password   | **cms:process_reset_password**<!--[**cms:process_reset_password**](/tags-reference/Extended-Users/process_reset_password.md)--> |
 | Register Account | does not require a dedicated tag |
-| Activate account | [**cms:process_activation**](../../tags-reference/Extended-Users/process_activation.md) |
+| Activate account | [**cms:process_activation**](/tags-reference/Extended-Users/process_activation.md) |
+| Create Activation Link | [**cms:activation_link**](/tags-reference/Extended-Users/activation_link.md) |
+| Create Login Link | **cms:login_link**<!--[**cms:login_link**](/tags-reference/Extended-Users/login_link.md)--> |
+| Create Logout Link | **cms:logout_link**<!--[**cms:logout_link**](/tags-reference/Extended-Users/logout_link.md)--> |
 
 ---
 

@@ -5,6 +5,7 @@ The **call** tag executes a function with optional parameters. It is a self-clos
 ```xml
 <cms:call 'read-aloud' />
 ```
+
 Call invokes both named functions and anonymous functions (those stored in a variable).
 
 ## Parameters
