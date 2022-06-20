@@ -1,6 +1,8 @@
 # What's new in M.i.d.ware
+
 *Latest on top*
 
+* ## [CACHING PAGES](concepts/Caching-Pages) ○ CONCEPT
 * ## [cms:arr_key_exists](tags-reference/Arrays/arr_key_exists.md)
 * ## [COUCH ARRAYS](concepts/Arrays) ○ CONCEPT
 * ## [CUSTOM ROUTES](concepts/Custom-Routes) ○ CONCEPT
