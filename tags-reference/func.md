@@ -52,6 +52,10 @@ Both named and anonymous functions can have an unlimited number of user-defined 
 
 Briefly take a look at the last, third, example above and note how the order of named parameters in 'cms:call' tag is different from the order of those defined by the func. Values will be correctly matched, because parameters are named explicitly in the caller. It means that if you decide to omit names, make sure values are passed in expected order. That order has been followed in the second example with unnamed passed parameters.
 
+**Important: Best thing is to either use all named params or all unnamed params (*unnamed – in the declared order*)**. For more information see [**cms:call**](#related-tags) tag.
+
+### Anonymous
+
 Anonymous functions are stored in a variable. To call such function we supply the variable itself without quotes i.e. passing by value, not by name.
 
 ```xml
@@ -95,9 +99,11 @@ All values that a caller sends to a function e.g. 'espresso', 'large', become av
 
 Couch additionally sets 3 special variables available only within 'cms:func' during execution. Those are &mdash;
 
-* k_func
-* k_args
-* k_named_args
+* **k_func**
+* **k_args**
+* **k_named_args**
+
+These can be called *advanced vars* and are meant to mostly be processed programmatically. Vast majority of functions wouldn't need to use them.
 
 ### k\_func
 
@@ -158,6 +164,7 @@ A last (but not the least) feature of **k_args** and **k_named_args** variables:
 k_args => [{"name":"","val":"espresso"},{"name":"size","val":"large"},{"name":"when","val":"now"},{"name":"for","val":"a friend"}]
 k_named_args => {"size":"large","when":"now","for":"a friend"}
 ```
+
 This feature allows for truly unconstrained scenarious to see the light. Consider, for example, an unlimited shopping list where a function nicely formats and outputs all items passed to it at once.
 
 We, the Couch community, can't wait to see how you apply the **func** tag. And don't forget to showcase your functions in forum!
