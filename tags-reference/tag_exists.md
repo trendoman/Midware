@@ -6,6 +6,8 @@ The **tag_exists** tag can be used to check if a particular tag is available.
 <cms:tag_exists 'show_json' />
 ```
 
+Returned value is *1* or *0*.
+
 ## Usage
 
 One scenario for this tag is customization of warnings when some tag is not registered.

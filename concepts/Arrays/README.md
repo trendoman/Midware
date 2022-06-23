@@ -716,8 +716,8 @@ Please welcome the constellation of tags that come alongside presented feature i
 * **arr_count**
 * **array_count**
 * [**arr_key_exists**](/tags-reference/Arrays/arr_key_exists.md)
-* **arr_val_exists**
-* **is**
+* [**arr_val_exists**](/tags-reference/Arrays/arr_val_exists.md)
+* [**is**](/tags-reference/Arrays/is.md)
 * [**Tweakus-Dilectus &raquo; is_not**](https://github.com/trendoman/Tweakus-Dilectus/tree/main/anton.cms%40ya.ru__tags-new/is_not/)
 
 ## Thank you
@@ -730,6 +730,7 @@ That should be it. As always feedback solicited.
 * **escape_json**
 * **put**
 * [**capture**](capture.md)
+* [**not**](not.md)
 * [**Documentation &raquo; set**](https://docs.couchcms.com/tags-reference/set.html)
 * [**Documentation &raquo; show**](https://docs.couchcms.com/tags-reference/show.html)
 * [**Documentation &raquo; get**](https://docs.couchcms.com/tags-reference/get.html)

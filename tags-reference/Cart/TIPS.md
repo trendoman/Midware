@@ -27,6 +27,22 @@ Complete Cart data is stored in session variable **kcart** and contains followin
  discount                   custom_vars
 ```
 
+```js
+"kcart":{
+   "items":[],
+   "count_items":0,
+   "count_shippable_items":0,
+   "sub_total":0,
+   "discount":0,
+   "sub_total_discounted":0,
+   "taxes":0,
+   "shipping":0,
+   "total":0,
+   "custom_vars":[]
+}
+```
+
+
 ## Actions
 
 Query string parameter **kcart_action** is universal for all actions in CouchCart and takes numeric values e.g.

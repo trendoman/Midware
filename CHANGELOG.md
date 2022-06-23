@@ -2,6 +2,8 @@
 
 *Latest on top*
 
+* ## [cms:is](tags-reference/Arrays/is.md)
+* ## [cms:arr_val_exists](tags-reference/Arrays/arr_val_exists.md)
 * ## [CACHING PAGES](concepts/Caching-Pages) ○ CONCEPT
 * ## [cms:arr_key_exists](tags-reference/Arrays/arr_key_exists.md)
 * ## [COUCH ARRAYS](concepts/Arrays) ○ CONCEPT

@@ -9,6 +9,8 @@ In essense it is a flag that signals *1* for any programmatic xhr (ajax) request
 ```
 Tag does not break code execution.
 
+Returned value is *1* or *0*.
+
 ## Usage
 
 Allows to prepare some response for a visitor &mdash;

@@ -6,6 +6,8 @@ The **func_exists** tag can be used to check if a particular 'cms:func' function
 <cms:func_exists 'show-ms' />
 ```
 
+Returned value is *1* or *0*.
+
 ## Usage
 
 One scenario for this tag is customization of warnings when some func is not registered.<br>

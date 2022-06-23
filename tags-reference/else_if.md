@@ -63,7 +63,9 @@ The addition of cms:else_if tag to the suite of logic tags now transforms the pr
 
 ## Parameters
 
-Same as **if**.
+* logical expression
+
+Same as [**if**](#related-tags)
 
 ## Variables
 
