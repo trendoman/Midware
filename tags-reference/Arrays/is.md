@@ -3,13 +3,13 @@
 Tag **cms:is** helps to check if a value exists in a simple array.
 
 ```xml
-<cms:is key='' in=array />
+<cms:is val='' in=array />
 ```
 
 Tag is an alias to [**cms:arr_val_exists**](#related-tags) –
 
 ```xml
-<cms:arr_val_exists key='' in=array />
+<cms:arr_val_exists val='' in=array />
 ```
 
 Returned value is *1* or *0*.
@@ -38,7 +38,7 @@ check if your language-code is present by using literal value e.g.
 or by using some variable –
 
 ```xml
-<cms:is key=k_lang in=langcodes />
+<cms:is val=k_lang in=langcodes />
 ```
 
 ### Negation
@@ -52,13 +52,13 @@ Inverted result can be queried with a custom tag [**cms:is_not**](#related-tags)
 or with stock tag [**cms:not**](#related-tags) e.g.
 
 ```xml
-<cms:not "<cms:is 'mykey' in=array />" />
+<cms:not "<cms:is 'myvalue' in=array />" />
 ```
 
 as a condition –
 
 ```xml
-<cms:if  "<cms:not  "<cms:is 'mykey' in=array />"  />"  >...</cms:if>
+<cms:if  "<cms:not  "<cms:is 'myvalue' in=array />"  />"  >...</cms:if>
 ```
 
 ## Related tags
