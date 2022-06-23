@@ -16,7 +16,7 @@ Returned value is *1* or *0*.
 
 ## Parameters
 
-* **key**
+* **val**
 * **in**
 
 Parameter **in** is defined *without* single or double quotes i.e. array passed as a variable, not as array's name.
