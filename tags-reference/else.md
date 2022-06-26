@@ -1,6 +1,6 @@
 # else
 
-The **else** tag always occurs within an **if** tag block.
+The **else** tag always occurs within an [**if**](#related-tags) tag block.
 
 Often you'd want to execute a certain set of statements when a given condition is met and a different set when the condition is not met.
 
