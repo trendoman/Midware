@@ -1,28 +1,26 @@
-# arr_count • [Arrays](#related-pages)
+# array_count • [Arrays](#related-pages)
 
-Tag **cms:arr_count** shows number of array elements.
+Tag **cms:array_count** shows number of array elements.
 
 ```xml
-<cms:arr_count my_array />
+<cms:array_count my_array />
 ```
 
-Returns ***empty string*** if supplied variable is not an array.
+Returns ***0*** if supplied variable is not an array.
 
 ---
 
-Tag's sibling is the [**cms:array_count**](#related-tags) tag, which does the same but returns ***0*** if value is not an array.
+Tag's sibling is the [**cms:arr_count**](#related-tags) tag, which does the same but **returns empty string** if value is not array.
 
 ## Parameters
 
-* **var**
-
-Parameter's name can be either **var** or omitted.
+It accepts a single parameter. Parameter's name can be anything or omitted.
 
 ## Example
 
 ```xml
 <cms:set rec='["de", "fr", "es"]' is_json='1' />
-<cms:arr_count rec />
+<cms:array_count rec />
 ```
 
 output is ***`3`***
@@ -32,18 +30,18 @@ output is ***`3`***
 Inverted result – ***0*** or ***1*** – can be achieved with a tag [**cms:not**](#related-tags) e.g.
 
 ```xml
-<cms:not "<cms:arr_count rec />" />
+<cms:not "<cms:array_count rec />" />
 ```
 
 as a condition –
 
 ```xml
-<cms:if  "<cms:not  "<cms:arr_count var=rec />"  />"  >...</cms:if>
+<cms:if  "<cms:not  "<cms:array_count arr=rec />"  />"  >...</cms:if>
 ```
 
 ## Related tags
 
-* [**array_count**](https://github.com/trendoman/Midware/tree/main/tags-reference/Arrays/array_count.md)
+* [**arr_count**](https://github.com/trendoman/Midware/tree/main/tags-reference/Arrays/arr_count.md)
 * [**arr_key_exists**](https://github.com/trendoman/Midware/tree/main/tags-reference/Arrays/arr_key_exists.md)
 * [**arr_val_exists**](https://github.com/trendoman/Midware/tree/main/tags-reference/Arrays/arr_val_exists.md)
 * [**is**](https://github.com/trendoman/Midware/tree/main/tags-reference/Arrays/is.md)

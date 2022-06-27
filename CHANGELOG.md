@@ -2,6 +2,7 @@
 
 *Latest on top*
 
+* ## [cms:array_count](tags-reference/Arrays/array_count.md)
 * ## [cms:arr_count](tags-reference/Arrays/arr_count.md)
 * ## [cms:no_results](tags-reference/no_results.md)
 * ## [cms:else](tags-reference/else.md)
