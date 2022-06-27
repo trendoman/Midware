@@ -713,8 +713,8 @@ By specifying the scope as 'parent', we tell `<cms:put>` that we wish to set a v
 
 Please welcome the constellation of tags that come alongside presented feature in hopes to simplify day-to-day work with arrays —
 
-* **arr_count**
-* **array_count**
+* [**arr_count**](/tags-reference/Arrays/arr_count.md)
+* [**array_count**](/tags-reference/Arrays/array_count.md)
 * [**arr_key_exists**](/tags-reference/Arrays/arr_key_exists.md)
 * [**arr_val_exists**](/tags-reference/Arrays/arr_val_exists.md)
 * [**is**](/tags-reference/Arrays/is.md)
@@ -723,7 +723,6 @@ Please welcome the constellation of tags that come alongside presented feature i
 ## Thank you
 
 That should be it. As always feedback solicited.
-
 
 ## Related tags
 
