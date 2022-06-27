@@ -2,6 +2,8 @@
 
 *Latest on top*
 
+* ## [cms:page_exists](tags-reference/page_exists.md)
+   New parameter – **id**.
 * ## [cms:no_cache](tags-reference/no_cache.md)
 * ## [cms:strlen](tags-reference/strlen.md)
 * ## [cms:array_count](tags-reference/Arrays/array_count.md)

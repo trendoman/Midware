@@ -174,7 +174,7 @@ So in a sense, the two (i.e. the cloned page of users/index.php and the user acc
 
 Delete a user account and the associated cloned-page gets deleted automatically (the reverse, though, does not happen i.e. deleting a cloned-page will ***not*** delete the associated user-account. This is by design to prevent accidental deletions of precious user-accounts)
 
-> You'll notice that the default user-account created by Couch at installation (the 'super-admin') does not, yet, have a counterpart cloned-page. Click on the account to open its edit screen and press 'save'. Doing so will create its associated cloned-page.
+> You'll notice that the default user-account created by Couch at installation (the 'super-admin') does not, yet, have a counterpart cloned-page. Click on the account to open its edit screen and press 'save'. **Doing so will create its associated cloned-page**.
 
 If, at this point, you still find yourself wondering why we need to take this round-about route of accessing user accounts via cloned-pages, please remember that by doing so the full gamut of Couch's features e.g. to name a few -
 
