@@ -6,7 +6,7 @@ Tag **cms:strlen** counts a string's length.
 <cms:strlen my_string />
 ```
 
-If PHP version supports it, the multi-byte string extension is used to correctly count number of characters in a string of UTF8.
+If server's PHP configuration supports it, the multi-byte string extension is used to correctly count number of characters in a string of UTF8.
 
 Important note is that **the string will be trimmed before counting**, i.e. stripped of any non-symbol characters before and after the string, just like tag [**cms:trim**](#related-tags) does.
 
@@ -46,5 +46,5 @@ Use-cases where a string must be validated for actual text content, without HTML
 
 * [**Documentation &raquo; not_empty**](https://docs.couchcms.com/tags-reference/not_empty.html)
 * [**Tweakus-Dilectus Tags &raquo; if_empty**](https://github.com/trendoman/Tweakus-Dilectus/tree/main/anton.cms%40ya.ru__tags-new/if_empty)
-* [**trim**](./trim.md)
 * [**capture**](./capture.md)
+* [**trim**](./trim.md)

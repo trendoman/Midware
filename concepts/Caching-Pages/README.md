@@ -265,8 +265,7 @@ in any part of the page.
 ## Related tags
 
 * **db_persist**
-* **no_cache**
-<!--* [**no_cache**](https://github.com/trendoman/Midware/tree/main/tags-reference/no_cache.md)-->
+* [**no_cache**](https://github.com/trendoman/Midware/tree/main/tags-reference/no_cache.md)
 
 ## Related funcs
 
@@ -276,7 +275,6 @@ in any part of the page.
 ## Related pages
 
 * [**Core Concepts &raquo; Extended Users**](https://github.com/trendoman/Midware/tree/main/concepts/Extended-Users)
-
 
 # Caching Part II — Caching Code
 

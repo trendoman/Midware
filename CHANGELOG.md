@@ -2,6 +2,7 @@
 
 *Latest on top*
 
+* ## [cms:no_cache](tags-reference/no_cache.md)
 * ## [cms:strlen](tags-reference/strlen.md)
 * ## [cms:array_count](tags-reference/Arrays/array_count.md)
 * ## [cms:arr_count](tags-reference/Arrays/arr_count.md)
