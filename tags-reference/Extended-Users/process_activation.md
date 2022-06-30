@@ -41,15 +41,27 @@ Page with this tag present is always served *non-cached* with cache explicitly t
 
 ## Variables
 
-Tag will set context variables —
+Tag **process_activation** will set following variables —
 
-* k_success
-* k_error
+* **k_success**
+* **k_error**
+
+---
+
+Addon **Extended Users** adds following variables in context —
+
+* k_user_template
+* k_user_login_template
+* k_user_lost_password_template
+* k_user_registration_template
 
 ## Related tags
 
-* [**activation_link**](./activation_link.md)
-* **login_link**
+Addon **Extended Users** features following tags -
+
+* [**process_activation**](https://github.com/trendoman/Midware/tree/main/tags-reference/Extended-Users/process_activation.md)
+* [**activation_link**](https://github.com/trendoman/Midware/tree/main/tags-reference/Extended-Users/activation_link.md)
+* [**login_link**](https://github.com/trendoman/Midware/tree/main/tags-reference/Extended-Users/login_link.md)
 * **logout_link**
 * **process_login**
 * **process_logout**

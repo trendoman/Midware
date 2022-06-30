@@ -42,10 +42,23 @@ Tag is expected to be used in email sent to user e.g.
 
 This tag does not set any variables of its own.
 
+---
+
+Addon **Extended Users** adds following variables in context —
+
+* k_user_template
+* k_user_login_template
+* k_user_lost_password_template
+* k_user_registration_template
+
+
 ## Related tags
 
-* [**process_activation**](./process_activation.md)
-* **login_link**
+Addon **Extended Users** features following tags —
+
+* [**process_activation**](https://github.com/trendoman/Midware/tree/main/tags-reference/Extended-Users/process_activation.md)
+* [**activation_link**](https://github.com/trendoman/Midware/tree/main/tags-reference/Extended-Users/activation_link.md)
+* [**login_link**](https://github.com/trendoman/Midware/tree/main/tags-reference/Extended-Users/login_link.md)
 * **logout_link**
 * **process_login**
 * **process_logout**

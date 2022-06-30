@@ -2,6 +2,7 @@
 
 *Latest on top*
 
+* ## [cms:login_link](https://github.com/trendoman/Midware/tree/main/tags-reference/Extended-Users/login_link.md)
 * ## [cms:page_exists](tags-reference/page_exists.md)
    New parameter – **id**.
 * ## [cms:no_cache](tags-reference/no_cache.md)
