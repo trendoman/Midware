@@ -42,8 +42,6 @@ Tag is expected to be used in email sent to user e.g.
 
 This tag does not set any variables of its own.
 
----
-
 Addon **Extended Users** adds following variables in context —
 
 * k_user_template

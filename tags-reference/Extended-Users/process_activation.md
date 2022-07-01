@@ -46,8 +46,6 @@ Tag **process_activation** will set following variables —
 * **k_success**
 * **k_error**
 
----
-
 Addon **Extended Users** adds following variables in context —
 
 * k_user_template

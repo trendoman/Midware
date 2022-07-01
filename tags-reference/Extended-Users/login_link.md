@@ -1,4 +1,4 @@
-# login_link
+# login_link • [**Extended Users**](#related-pages)
 
 Tag **cms:login_link** returns a link to the login template.
 
@@ -6,7 +6,8 @@ Tag **cms:login_link** returns a link to the login template.
 <cms:login_link />
 ```
 
-Tag's output can have a custom redirect link, unlike the system-wide variable **k_login_link**.
+Why have a separate tag?\
+Suppose we have a custom page 'Profile' or 'Welcome' that serves as destination point for users that just logged in. Tag's output can have a custom redirect link, unlike the system-wide variable **k_login_link**. With param **redirect** we instruct Couch to generate such link for us and do not return user to the previous page – page where user clicked the login link and expects to be returned back to afterwards.
 
 ## Parameters
 
@@ -25,20 +26,13 @@ Anonymous users are treated as follows –
 
 * **no defined login template**
 
-   admin-panel default login page: `couch/login.php` AND query string `?redirect=` AND ( link to the **current page** OR **redirect** param value)
+   ***admin-panel default login*** page: `couch/login.php` AND query string `?redirect=` AND ( link to the current page OR **redirect** param value)
 
 * **defined login template**
 
-   a link to the login template and a similar redirect as ↑ above.
+   a link to the ***registered login template*** and the same query string as ↑ above.
 
 Referenced 'current page' is taken from the `$_SERVER["REQUEST_URI"]` constant, i.e. includes query string values from URL.
-
----
-
-Q.: Why have a separate tag?\
-A.: Suppose we have a custom page 'Profile' or 'Welcome' that serves as destination point for users that just logged in. With param **redirect** we instruct Couch to generate such link for us and do not return user to the previous page – page where user clicked the login link and expects to be returned back to afterwards.
-
----
 
 Example of access control -
 
@@ -50,15 +44,9 @@ Example of access control -
 <!-- someone who manages to reach here is certainly a logged-in user -->
 ```
 
----
-
-**NOTE:** system variable **k_login_link** is available for anonymous users too and also reflects changes in the Extended's config.
-
 ## Variables
 
 This tag does not set any variables of its own.
-
----
 
 Addon **Extended Users** adds following variables in context —
 
@@ -74,7 +62,7 @@ Addon **Extended Users** features following tags —
 * [**process_activation**](https://github.com/trendoman/Midware/tree/main/tags-reference/Extended-Users/process_activation.md)
 * [**activation_link**](https://github.com/trendoman/Midware/tree/main/tags-reference/Extended-Users/activation_link.md)
 * [**login_link**](https://github.com/trendoman/Midware/tree/main/tags-reference/Extended-Users/login_link.md)
-* **logout_link**
+* [**logout_link**](https://github.com/trendoman/Midware/tree/main/tags-reference/Extended-Users/logout_link.md)
 * **process_login**
 * **process_logout**
 * **process_forgot_password**
