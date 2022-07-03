@@ -72,7 +72,7 @@ Errors during login process clear the variable **k_success** (in form's context)
 ```xml
 <cms:process_login />
 <cms:if k_login_error>
-  ...
+<!--// password does not match or else; error is: <cms:show k_login_error />-->
 </cms:if>
 ```
 

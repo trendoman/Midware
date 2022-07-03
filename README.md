@@ -1,46 +1,29 @@
-# Missed in Development - ware
+# `M`issed `i`n `D`evelopment..`ware`
 
-Over 100 Tags and many Concepts are missing from official [**CouchCMS Documentation**](https://docs.couchcms.com/index.html).
-
----
-
-Hi ☺ I'm Anton ♀, a CouchCMS guru and pro-coder, also forum's moderator and I've been with Couch since *2014*.
+Trying to revive outdated [**CouchCMS Documentation**](https://docs.couchcms.com/index.html). Here you will find missing tags, concepts and tutorials. Information is updated along the CMS source code, is relevant and expanded with tips and examples.
 
 ---
 
-Prepare to the sweetest.
+Hi ☺ I'm Anton ♀, and I really like CouchCMS and its nice tiny community. Check out my [**addons**](https://github.com/trendoman/Tweakus-Dilectus), [**functions**](https://github.com/trendoman/Cms-Fu) and telegram [**COUCH:TALK**](https://t.me/couchcms_chat) chat.
 
-Become the pro and rise above the competition with —
+---
 
-* Information that **existed in emails, code and lost forum threads** and was never written to Documentation.
-* Tags and Concepts that were never added to CouchCMS Documentation page, but they exist.
-* Everything you'll find here is **official, straight from CouchCMS** source code.
+## Support, suggestions, requests, feedback
 
-> ▲ tags<br>
-> ○ concepts<br>
-> ▼ tutorials<br>
+Drop me a line and I'll try to get back
 
-
-## Suggestions, requests etc
-
-Send me your work, issues and requests at: tony.smirnov@gmail.com<br>
-
-☺
+<tony.smirnov@gmail.com>
 
 ### telegram
 
-I created and maintain Couch-related **telegram channel**: https://t.me/s/couchcms
+*Join [**COUCH:TALK**](https://t.me/couchcms_chat) telegram channel* — free no-ads discussion place for our tiny community. It's all about beloved CouchCMS! ☺
 
-Ask questions, post comments; read news; promote your work &ndash; it's all about CouchCMS.
+## Donate
 
-## donate
+**BTC**: bc1qsl2tulmsjcvpkegepeunmumz599yz0lhuktdjt
 
-Donate today to help me get through very rough times.
+Your help goes towards —
 
-**Bitcoin**: bc1qsl2tulmsjcvpkegepeunmumz599yz0lhuktdjt
-
-Desperately need your help that allows to &ndash;
-- be well
-- anwer your questions
-- write new pages
-- publish free addons
+- added and updated [**documentation pages**](https://github.com/trendoman/Midware)
+- more [**functions**](https://github.com/trendoman/Cms-Fu) and [**addons**](https://github.com/trendoman/Tweakus-Dilectus)
+- snacks for my two Canadian Sphynx cats.

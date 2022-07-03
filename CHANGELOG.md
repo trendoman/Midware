@@ -2,6 +2,7 @@
 
 *Latest on top*
 
+* ## [cms:process_forgot_password](https://github.com/trendoman/Midware/tree/main/tags-reference/Extended-Users/process_forgot_password.md) • Extended Users
 * ## [cms:process_login](https://github.com/trendoman/Midware/tree/main/tags-reference/Extended-Users/process_login.md) • Extended Users
 * ## [cms:logout_link](https://github.com/trendoman/Midware/tree/main/tags-reference/Extended-Users/logout_link.md) • Extended Users
 * ## [cms:login_link](https://github.com/trendoman/Midware/tree/main/tags-reference/Extended-Users/login_link.md) • Extended Users
