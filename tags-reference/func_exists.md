@@ -31,3 +31,7 @@ This tag is self-closing and does not set any variables of its own.
 * [**call**](./call.md)
 * [**func**](./func.md)
 * [**tag_exists**](./tag_exists.md)
+
+## Related pages
+
+* [**Tweakus-Dilectus Addon » Func-on-demand**](https://github.com/trendoman/Tweakus-Dilectus/tree/main/anton.cms@ya.ru__func-on-demand) — autoloading and caching for funcs

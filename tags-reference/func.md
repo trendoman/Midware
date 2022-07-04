@@ -173,3 +173,7 @@ We, the Couch community, can't wait to see how you apply the **func** tag. And d
 
 * [**call**](./call.md)
 * [**func_exists**](./func_exists.md)
+
+## Related pages
+
+* [**Tweakus-Dilectus Addon » Func-on-demand**](https://github.com/trendoman/Tweakus-Dilectus/tree/main/anton.cms@ya.ru__func-on-demand) — autoloading and caching for funcs
