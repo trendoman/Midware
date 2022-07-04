@@ -39,13 +39,13 @@ Page with this tag is always served non-cached with cache explicitly turned off,
 
 This tag sets following variables:
 
-|<!----------------->|<!--------------------->|
+|<!--             -->|<!--                 -->|
 |:-------------------|:-----------------------|
 | k_user_id          |  k_user_access_level   |
 | k_user_name        |  k_extended_user_id    |
 | k_user_title       |  k_reset_password_link |
 | k_user_email       |                        |
-|<!----------------->|<!--------------------->|
+|<!--             -->|<!--                 -->|
 | k_success          |  k_forgot_password_success |
 | k_error            |  k_forgot_password_error |
 
