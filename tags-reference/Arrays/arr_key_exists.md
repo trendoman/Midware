@@ -53,8 +53,8 @@ as a condition –
 ## Related tags
 
 * [**arr_val_exists**](https://github.com/trendoman/Midware/tree/main/tags-reference/Arrays/arr_val_exists.md)
-* **arr_count**
-* **array_count**
+* [**arr_count**](https://github.com/trendoman/Midware/tree/main/tags-reference/Arrays/arr_count.md)
+* [**array_count**](https://github.com/trendoman/Midware/tree/main/tags-reference/Arrays/array_count.md)
 * [**is**](https://github.com/trendoman/Midware/tree/main/tags-reference/Arrays/is.md)
 * [**not**](https://github.com/trendoman/Midware/tree/main/tags-reference/not.md)
 * [**Tweakus-Dilectus &raquo; is_not**](https://github.com/trendoman/Tweakus-Dilectus/tree/main/anton.cms%40ya.ru__tags-new/is_not/)
