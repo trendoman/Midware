@@ -2,6 +2,7 @@
 
 *Latest on top*
 
+* ## [cms:delete_file](https://github.com/trendoman/Midware/tree/main/custom-tags-reference/delete_file.md) ○ Custom Tags
 * ## [cms:process_logout](https://github.com/trendoman/Midware/tree/main/tags-reference/Extended-Users/process_logout.md) • Extended Users
 * ## [cms:process_reset_password](https://github.com/trendoman/Midware/tree/main/tags-reference/Extended-Users/process_reset_password.md) • Extended Users
 * ## [cms:process_forgot_password](https://github.com/trendoman/Midware/tree/main/tags-reference/Extended-Users/process_forgot_password.md) • Extended Users

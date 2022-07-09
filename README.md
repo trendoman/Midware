@@ -1,5 +1,9 @@
 # `M`issed `i`n `D`evelopment..`ware`
 
+#### Bookmark [CHANGELOG.md](https://github.com/trendoman/Midware/blob/main/CHANGELOG.md) which is always updated with new addings.
+
+---
+
 Trying to revive outdated [**CouchCMS Documentation**](https://docs.couchcms.com/index.html). Here you will find missing tags, concepts and tutorials. Information is updated along the CMS source code, is relevant and expanded with tips and examples.
 
 ---
