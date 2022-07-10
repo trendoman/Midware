@@ -1,0 +1,12 @@
+<cms:pages 
+    masterpage='pads.php' 
+    id=rt_id 
+    custom_field="pad_owner=<cms:show k_user_name />" 
+    limit='1' 
+    show_future_entries='1' >
+
+    <cms:no_results>
+        <cms:abort is_404='1' />
+    </cms:no_results>
+    
+</cms:pages>

@@ -1,0 +1,46 @@
+<cms:pages masterpage='pads.php' id=rt_id limit='1' show_future_entries='1'>      
+    <cms:set my_current_pad=k_page_title 'global' />
+    <cms:set my_current_pad_name=k_page_name 'global' />
+    <cms:set my_current_pad_id=k_page_id 'global' />
+    <cms:set my_current_pad_link="<cms:route_link 'page_view' rt_id=k_page_id />" 'global' />
+    <cms:set my_total_records='0' 'global' />
+</cms:pages>
+
+<cms:capture into='my_content' >
+      <table class="notes">
+        <tr>
+          <th class="note">Note <a href="<cms:add_querystring my_current_pad_link 'sort=name' />" class="sort_arrow" >&uarr;</a><a href="<cms:add_querystring my_current_pad_link 'sort=-name' />" class="sort_arrow" >&darr;</a></th>
+          <th>Pad</th>
+          <th class="date">Last modified <a href="<cms:add_querystring my_current_pad_link 'sort=date' />" class="sort_arrow" >&uarr;</a><a href="<cms:add_querystring my_current_pad_link 'sort=-date' />" class="sort_arrow" >&darr;</a></th>
+        </tr>
+        
+        <!-- process sorting -->
+        <cms:embed 'handle_sort.html' />
+        
+        <cms:pages masterpage='notes.php' custom_field="note_owner=<cms:show k_user_name /> | note_pad=<cms:show my_current_pad_name />" orderby=my_sort_field order=my_sort_dir >
+            <tr>
+              <td><a href="<cms:route_link 'page_view' rt_id=k_page_id />"><cms:show k_page_title /></a></td>
+              <td class="pad">
+                <cms:related_pages 'note_pad'><cms:show k_page_title /></cms:related_pages>
+              </td>
+              <td class="hidden-text date"><cms:date k_page_modification_date format='jS M, Y' /> </td>
+            </tr>
+            
+            <cms:if k_paginated_top >
+                <cms:set my_total_records=k_total_records 'global' />
+            </cms:if>
+            
+            <cms:no_results>
+                <tr>
+                    <td colspan='3'><p>No notes in this pad yet.</p></td>
+                </tr>
+            </cms:no_results>
+        </cms:pages>
+      </table>
+      <a href="<cms:route_link 'create_with_pad_view' masterpage='notes.php' rt_id=my_current_pad_id />" class="button">New note</a>
+      <a href="<cms:route_link 'edit_view' masterpage='pads.php' rt_id=my_current_pad_id />">Edit pad</a>
+</cms:capture>
+
+<cms:set my_title="<cms:show my_current_pad /> (<cms:show my_total_records />)" 'global' />
+
+<cms:embed 'views/layout_with_sidebar.html' />

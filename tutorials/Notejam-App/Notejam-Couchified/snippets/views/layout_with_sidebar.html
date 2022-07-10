@@ -1,0 +1,18 @@
+<cms:capture into='my_sidebar' >
+    <div class="three columns">
+      <h4 id="logo">My pads</h4>
+      <nav>
+      <ul>
+      <cms:pages masterpage='pads.php' custom_field="pad_owner=<cms:show k_user_name />" show_future_entries='1'>
+        <li><a href="<cms:route_link 'page_view' rt_id=k_page_id />"><cms:show k_page_title /></a></li>
+      </cms:pages>
+      </ul>
+      <hr />
+      <a href="<cms:route_link 'create_view' masterpage='pads.php' />">New pad</a>
+      </nav>
+    </div>
+</cms:capture>
+
+<cms:set my_column_width='thirteen' />
+
+<cms:embed 'views/layout_main.html' />

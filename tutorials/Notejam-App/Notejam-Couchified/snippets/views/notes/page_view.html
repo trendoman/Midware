@@ -1,0 +1,17 @@
+<cms:pages id=rt_id limit='1' show_future_entries='1' >  
+  
+    <cms:set my_title=k_page_title 'global' />
+
+    <cms:capture into='my_content' >
+        <p class="hidden-text">Last edited at <cms:date k_page_modification_date format='jS M, Y' /></p>
+        <div class="note">
+            <cms:nl2br><cms:show content /></cms:nl2br>
+            <p></p>
+        </div>
+        <a href="<cms:route_link 'edit_view' rt_id=k_page_id />" class="button">Edit</a>
+        <a href="<cms:route_link 'delete_view' rt_id=k_page_id />" class="delete-note">Delete it</a>
+    </cms:capture>
+    
+</cms:pages>
+
+<cms:embed 'views/layout_with_sidebar.html' />

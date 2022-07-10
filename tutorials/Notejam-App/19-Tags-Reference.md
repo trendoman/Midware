@@ -1,6 +1,6 @@
 # Tag reference
 
-Following tags were mentioned at least once during hte course of the tutorial
+Following tags were mentioned at least once during the course of the tutorial
 
 * [**abort**](https://github.com/trendoman/Midware/tree/main/tags-reference/abort.md) « Midware Tags Reference
 * [**add_querystring**](https://docs.couchcms.com/tags-reference/if.html) « Documentation

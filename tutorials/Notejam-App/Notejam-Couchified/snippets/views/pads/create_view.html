@@ -1,0 +1,42 @@
+<cms:set my_title='New pad' />
+
+<cms:capture into='my_content' >
+    <cms:form 
+        masterpage=k_template_name
+        mode='create'
+        enctype='multipart/form-data'
+        method='post' 
+        class="pad" 
+        anchor='0' >
+    
+        <cms:if k_success>
+            <cms:db_persist_form 
+                k_page_title=frm_name
+                k_page_name="<cms:random_name />"
+                pad_owner=k_user_id
+            />                
+
+            <cms:if "<cms:not k_persist_error />">
+                <cms:redirect "<cms:route_link 'page_view' rt_id=k_last_insert_id />"  /> 
+            </cms:if>    
+        </cms:if>
+        
+        <cms:if k_error>
+            <div class="alert-area">
+                <div class="alert alert-error">
+                    <cms:each k_error >
+                        <cms:show item /><br>
+                    </cms:each>
+                 </div>
+            </div>
+        </cms:if>
+    
+        <label for="name">Name</label>
+        <cms:input type="text" name='name' id="name"  required='1' />
+        
+        <input type="submit" value="Save">
+        
+      </cms:form>
+</cms:capture>
+
+<cms:embed 'views/layout_with_sidebar.html' />

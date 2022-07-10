@@ -1,0 +1,48 @@
+<cms:pages id=rt_id limit='1' show_future_entries='1'>  
+  
+    <cms:set my_title=k_page_title 'global' />
+
+    <cms:capture into='my_content' >
+    
+        <cms:form 
+            masterpage=k_template_name
+            mode='edit'
+            page_id=k_page_id
+            enctype='multipart/form-data'
+            method='post' 
+            class="pad" 
+            anchor='0' >
+            
+            <cms:if k_success>
+                <cms:db_persist_form 
+                    k_page_title=frm_name
+                />                
+
+                <cms:if "<cms:not k_persist_error />">
+                    <cms:redirect "<cms:route_link 'page_view' rt_id=k_page_id />"  /> 
+                </cms:if>    
+            </cms:if>
+            
+            <cms:if k_error>
+                <div class="alert-area">
+                    <div class="alert alert-error">
+                        <cms:each k_error >
+                            <cms:show item /><br>
+                        </cms:each>
+                     </div>
+                </div>
+            </cms:if>
+        
+            <label for="name">Name</label>
+            <cms:input type="text" name='name' id="name"  required='1' value="<cms:show k_page_title />" />
+            
+            <input type="submit" value="Save">
+            
+          </cms:form>
+          
+          <a class="red" href="<cms:route_link 'delete_view' rt_id=k_page_id />">Delete pad</a>
+    </cms:capture>
+    
+</cms:pages>
+
+<cms:embed 'views/layout_with_sidebar.html' />

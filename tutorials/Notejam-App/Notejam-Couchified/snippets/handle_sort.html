@@ -1,0 +1,15 @@
+<cms:set my_sort="<cms:gpc 'sort' default='-date' />" />
+        
+<cms:if my_sort='name' >
+    <cms:set my_sort_field='page_title' />
+    <cms:set my_sort_dir='asc' />
+<cms:else_if my_sort='-name' />
+    <cms:set my_sort_field='page_title' />
+    <cms:set my_sort_dir='desc' />
+<cms:else_if my_sort='date' />
+    <cms:set my_sort_field='modification_date' />
+    <cms:set my_sort_dir='asc' />
+<cms:else />
+    <cms:set my_sort_field='modification_date' />
+    <cms:set my_sort_dir='desc' />
+</cms:if>

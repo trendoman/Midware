@@ -1,0 +1,29 @@
+<cms:pages id=rt_id limit='1' show_future_entries='1'>  
+  
+    <cms:set my_title=k_page_title 'global' />
+
+    <cms:capture into='my_content' >
+    
+        <cms:form 
+            masterpage=k_template_name
+            mode='edit'
+            page_id=k_page_id
+            method='post' 
+            anchor='0'
+            >
+            
+            <cms:if k_success>
+                <cms:db_delete_form />           
+                <cms:redirect "<cms:route_link 'list_view' masterpage='notes.php' />"  /> 
+            </cms:if>
+            
+            <p>Are you sure you want to delete <cms:show k_page_title />?</p>
+            <cms:input name='submit' type="submit" class="button red" value="Yes, delete I want to delete this pad" />
+            <a href="<cms:route_link 'edit_view' rt_id=k_page_id />">Cancel</a>
+            
+          </cms:form>
+    </cms:capture>
+    
+</cms:pages>
+
+<cms:embed 'views/layout_with_sidebar.html' />
