@@ -717,6 +717,7 @@ Please welcome the constellation of tags that come alongside presented feature i
 * [**array_count**](/tags-reference/Arrays/array_count.md)
 * [**arr_key_exists**](/tags-reference/Arrays/arr_key_exists.md)
 * [**arr_val_exists**](/tags-reference/Arrays/arr_val_exists.md)
+* [**is_array**](/tags-reference/Arrays/is_array.md)
 * [**is**](/tags-reference/Arrays/is.md)
 * [**Tweakus-Dilectus &raquo; is_not**](https://github.com/trendoman/Tweakus-Dilectus/tree/main/anton.cms%40ya.ru__tags-new/is_not/)
 
