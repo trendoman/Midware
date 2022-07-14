@@ -2,6 +2,7 @@
 
 *Latest on top*
 
+* ## [Reusable Functions](https://github.com/trendoman/Midware/tree/main/concepts/Reusable-Functions#functions) ○ Concepts
 * ## [cms:is_array](tags-reference/Arrays/is_array.md) • Couch Arrays
 * ## [Notejam App a.k.a. CouchCMS Advanced Tutorial](https://github.com/trendoman/Midware/tree/main/tutorials/Notejam-App/README.md#notejam-app-aka-couchcms-advanced-tutorial) ○ Tutorials
 * ## [cms:delete_file](https://github.com/trendoman/Midware/tree/main/custom-tags-reference/delete_file.md) ○ Custom Tags
