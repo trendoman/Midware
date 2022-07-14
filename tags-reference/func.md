@@ -1,4 +1,4 @@
-# func
+# func • **[Reusable Functions](https://github.com/trendoman/Midware/tree/main/concepts/Reusable-Functions#intro)**
 
 The **func** tag works by wrapping a piece of code and executing it sometime later upon a call. Unlike 'cms:capture' the code is not executed immediately.
 
@@ -22,10 +22,10 @@ Functions can be chained by calling another one in code.
 
 ## Parameters
 
-* unnamed
-* _into
-* _scope
-* named
+* ***unnamed***
+* ***named***
+* **_into**
+* **_scope**
 
 Named functions must have the very first mandatory parameter that gives name to it.
 
@@ -176,4 +176,5 @@ We, the Couch community, can't wait to see how you apply the **func** tag. And d
 
 ## Related pages
 
-* [**Tweakus-Dilectus Addon » Func-on-demand**](https://github.com/trendoman/Tweakus-Dilectus/tree/main/anton.cms@ya.ru__func-on-demand) — autoloading and caching for funcs
+* **[Concepts » Reusable Functions](https://github.com/trendoman/Midware/tree/main/concepts/Reusable-Functions#intro)** – starting tutorial on functions
+* **[Tweakus-Dilectus Addon » Func-on-demand](https://github.com/trendoman/Tweakus-Dilectus/tree/main/anton.cms@ya.ru__func-on-demand)** — autoloading and caching for funcs

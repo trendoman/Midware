@@ -1,4 +1,4 @@
-# call
+# call • **[Reusable Functions](https://github.com/trendoman/Midware/tree/main/concepts/Reusable-Functions#intro)**
 
 The **call** tag executes a function with optional parameters. It is a self-closed tag and if used as a tag-pair will not execute anything enclosed within.
 
@@ -85,8 +85,7 @@ Sets no variables of its own.
 
 ## Related pages
 
-* [**Tweakus-Dilectus Modded Tags &raquo; call**](https://github.com/trendoman/Tweakus-Dilectus/tree/main/anton.cms%40ya.ru__tags-modded/call)
-* [**Tweakus-Dilectus Addon » Func-on-demand**](https://github.com/trendoman/Tweakus-Dilectus/tree/main/anton.cms@ya.ru__func-on-demand) — autoloading and caching for funcs
-
-<!--* An exemplar tutorial on using functions as well as examples are in [&raquo; forum post](https://www.couchcms.com/forum/viewtopic.php?f=8&t=11368&start=10#p30174)-->
+* **[Concepts » Reusable Functions](https://github.com/trendoman/Midware/tree/main/concepts/Reusable-Functions#intro)** – starting tutorial on functions
+* **[Tweakus-Dilectus Modded Tags &raquo; call](https://github.com/trendoman/Tweakus-Dilectus/tree/main/anton.cms%40ya.ru__tags-modded/call)**
+* **[Tweakus-Dilectus Addon » Func-on-demand](https://github.com/trendoman/Tweakus-Dilectus/tree/main/anton.cms@ya.ru__func-on-demand)** — autoloading and caching for funcs
 <!--* Invoking anonymous functions in Conditional Fields is explained in tutorial in [CouchCMS Forum &raquo; forum topic](https://www.couchcms.com/forum/viewtopic.php?f=5&t=11512)-->

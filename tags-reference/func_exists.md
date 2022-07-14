@@ -1,6 +1,6 @@
-# func_exists
+# func_exists • **[Reusable Functions](https://github.com/trendoman/Midware/tree/main/concepts/Reusable-Functions#intro)**
 
-The **func_exists** tag can be used to check if a particular 'cms:func' function is available.
+The **func_exists** tag can be used to check if a particular '&lt;cms:func&gt;' function is available.
 
 ```xml
 <cms:func_exists 'show-ms' />
@@ -34,4 +34,5 @@ This tag is self-closing and does not set any variables of its own.
 
 ## Related pages
 
-* [**Tweakus-Dilectus Addon » Func-on-demand**](https://github.com/trendoman/Tweakus-Dilectus/tree/main/anton.cms@ya.ru__func-on-demand) — autoloading and caching for funcs
+* **[Concepts » Reusable Functions](https://github.com/trendoman/Midware/tree/main/concepts/Reusable-Functions#intro)** – starting tutorial on functions
+* **[Tweakus-Dilectus Addon » Func-on-demand](https://github.com/trendoman/Tweakus-Dilectus/tree/main/anton.cms@ya.ru__func-on-demand)** — autoloading and caching for funcs
