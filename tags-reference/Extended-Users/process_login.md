@@ -107,13 +107,24 @@ If the page with login form must not be refreshed, then user-info is not availab
 </cms:if>
 ```
 
+To use the tag without parent form and to check for success use the **k_login_error** variable e.g.
+
+```xml
+<cms:process_login username=username password=password remember='1' redirect='0' />
+<cms:if "<cms:not k_login_error />">
+   ...
+   <!--move your additional logic here. Make sure to redirect eventually-->
+</cms:if>
+```
+
 ## Variables
 
 Tag sets variables in the login form context:
 
-* k_success
 * k_error
 * k_login_error
+
+Note: Variable *k_success* is not set after a successful login.
 
 Addon **Extended Users** adds following variables in context —
 
