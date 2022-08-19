@@ -96,7 +96,8 @@ If the page with login form must not be refreshed, then user-info is not availab
 <cms:if k_success>
    <cms:process_login redirect="0"/>
    <cms:if k_success>
-      <!--PHP code to set the info about the new login into context (this would have happened automatically had the page refreshed).-->
+      <!--PHP code to set the info about the new login into context
+      (this would have happened automatically had the page refreshed).-->
       <cms:php>
          global $FUNCS;
          $FUNCS->set_userinfo_in_context();
@@ -105,6 +106,16 @@ If the page with login form must not be refreshed, then user-info is not availab
       <!--move your additional logic here. Make sure to redirect eventually-->
    </cms:if>
 </cms:if>
+```
+
+With Extended Users addon active, the extended context will be correctly set with the following amended php block:
+
+```xml
+<cms:php>
+   global $FUNCS, $KUSER;
+   $FUNCS->set_userinfo_in_context();
+   $KUSER->set_custom_fields_in_context();
+</cms:php>
 ```
 
 To use the tag without parent form and to check for success use the **k_login_error** variable e.g.
