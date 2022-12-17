@@ -171,6 +171,10 @@ If you use the locale-aware format characters mentioned above, this parameter ca
 <cms:date k_page_date format='%B %d, %Y' locale='russian' charset='windows-1251'/>
 ```
 
+```xml
+<cms:date format='%A %T %B' locale='norwegian'/>
+```
+
 This feature depends entirely on the indicated locale being available at your web server. If the locale is not available, the default 'english' locale is used.
 
 ### charset
