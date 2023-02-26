@@ -1,34 +1,29 @@
-# `<cms:delete_file>`
+# `<cms:delete_file>`, `<cms:del>`
 
-Deletes a file. Path is relevant to website directory.
+Path (absolute or relative to domain) or URL is checked for indicated file, then tag <del>deletes</del> renames the target ***file.ext*** to ***file.ext.bak*** unless the special parameter is passed. Supports a few special **@keywords** instead of path. Follows symlinks. No support of wildcards. Examples —
 
 ```xml
-<cms:delete_file 'log.txt' />
+<cms:del "@php" />
+<cms:del "@mysql" />
+<cms:del "log.txt" />
+<cms:del "<cms:show k_admin_path />cms.php" />
+<cms:del "<cms:show k_site_path />myuploads/file/log.txt" />
+<cms:del "myuploads/image/test.jpg" remove='1' />
 ```
 
-A special parameter allows to remove PHP error log defined in the ini-file. PHP will automatically re-create a new empty logfile.
-
-A shorter tag's name e.g. **&lt;cms:del&gt;** is possible via [**Aliases for tags**](#related-pages) addon
+**TAG IS SET TO WORK ONLY FOR LOGGED-IN ADMINS**
 
 ## Parameters
 
-* ***unnamed*** – path to file
+* ***unnamed*** – path to file. If the file does not exist, there will be no warnings.
 
-If the file does not exist, there will be no warnings.
+    also takes following **special values** —
 
-If a special value ***@php*** passed, tag will remove PHP's errors log.
+    - ___"@php"___ — tag will clear PHP Errors Log defined in the PHP's own ini-file.
+    - ___"@mysql"___ — tag will query MySQL for location of *queries.log* then clear it after backup.
 
-## Example
+* **remove** – can be ***1*** or ***0*** (default). Forces physical removal instead of rename. Works only for simple files i.e. does not apply to symlink targets or special keywords.
 
-```xml
-<cms:delete_file '@php' />
-→ deletes php log
-```
-
-```xml
-<cms:delete_file 'log.txt' />
-→ mywebsite/log.txt file
-```
 
 ## Installation
 

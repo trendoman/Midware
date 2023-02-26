@@ -3,7 +3,7 @@
 Tag **cms:process_reset_password** resets the password and emails the new password back to the user.
 
 ```xml
-<cms:activation_link user='example@example.me' />
+<cms:process_reset_password send_mail='1'/>
 ```
 
 ## Parameters

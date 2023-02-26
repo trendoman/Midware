@@ -2,6 +2,9 @@
 
 *Latest on top*
 
+* ## [cms:create_nonce](tags-reference/create_nonce.md)
+* ## [cms:check_nonce](tags-reference/check_nonce.md)
+* ## [cms:validate_nonce](tags-reference/validate_nonce.md)
 * ## [Pagebuilder](https://github.com/trendoman/Midware/tree/main/concepts/Pagebuilder) ○ Concepts
 * ## [Reusable Functions](https://github.com/trendoman/Midware/tree/main/concepts/Reusable-Functions#functions) ○ Concepts
 * ## [cms:is_array](tags-reference/Arrays/is_array.md) • Couch Arrays
